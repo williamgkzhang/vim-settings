@@ -1,4 +1,4 @@
-my_vim
+Vim Settings
 ======
 
-Personal vim settings
+Personal vim settings.
