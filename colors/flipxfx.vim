@@ -5,10 +5,6 @@ if exists("syntax_on")
 	syntax reset
 endif
 
-if has('gui_running')
-  set guifont=Monaco_for_Powerline:h13
-endif
-
 let g:colors_name="flipxfx"
 
 hi Normal          guifg=#F8F8F2 guibg=#1B1B1B	gui=none
