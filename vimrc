@@ -33,6 +33,9 @@ map <A-Tab> :NERDTreeTabsToggle<CR>
 set laststatus=2
 let g:airline_powerline_fonts=1
 
+" RSpec
+let g:RspecKeymap=0
+
 " Hide toolbar
 if has("gui_running")
 	set guioptions=-r
