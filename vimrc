@@ -68,6 +68,7 @@ set foldmethod=indent
 set nofoldenable
 set mouse=a
 set textwidth=0
+set scrolloff=5 
 syntax on
 filetype on
 filetype plugin on
