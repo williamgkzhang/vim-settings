@@ -1,3 +1,6 @@
+"""""""""""""""""""
+" Plugins
+"""""""""""""""""""
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -27,63 +30,88 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 
 " NERD Tree
 let g:nerdtree_tabs_open_on_gui_startup=0
-map <A-Tab> :NERDTreeTabsToggle<CR>
+map <a-tab> :NERDTreeTabsToggle<cr>
 
 " Airline
-set laststatus=2
-let g:airline_powerline_fonts=1
+if has('gui_running')
+	let g:airline_powerline_fonts=1
+end
 
 " RSpec
 let g:RspecKeymap=0
+
+
+"""""""""""""""""""
+" Vim Settings
+"""""""""""""""""""
+" Colorscheme
+colors flipxfx
+
+" Font
+set guifont=Monaco_for_Powerline:h13
 
 " Hide toolbar
 if has("gui_running")
 	set guioptions=-r
 endif
 
-" Colorscheme
-colors flipxfx
-
-" Font
-if has('gui_running')
-  set guifont=Monaco_for_Powerline:h13
-endif
-
-" Settings
+" Misc Settings
 set nocompatible
+set modeline
 set number
-set nowrap
-set autoindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set backspace=2
-set noexpandtab
-set clipboard=unnamed
-set nobackup
-set noswapfile
+set showmatch
 set incsearch
 set hlsearch
-set foldmethod=indent
+set autoread
+set nowrap
+set smartcase
+set wildmenu
+set wildignore=*.o,*.~,*.pyc,*.exe
 set nofoldenable
-set mouse=a
+set foldmethod=syntax
 set textwidth=0
-set scrolloff=5 
+set scrolloff=4
+set sidescrolloff=0
+set laststatus=2
+set mouse=a
+set clipboard=unnamed
+set lazyredraw
+set encoding=utf8
+set fileformats=unix,dos,mac
+set nobackup
+set nowb
+set noswapfile
 syntax on
-filetype on
 filetype plugin on
 filetype indent on
+
+" Indent Settings
+set autoindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set backspace=2
+set noexpandtab
+
+" Shortcuts
+let mapleader = ","
+let g:mapleader = ","
+nmap <leader>w :w<cr>
+map <a-]> :tabn<cr>
+map <a-[> :tabp<cr>
+map <c-t> :tabnew<cr>
+map <space> /
+map <s-space> :noh<cr>
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-h> <c-w>h
+map <c-l> <c-w>l
+map <c-w> <c-w>w
+map <leader>sc :setlocal spell!<cr>
+
+" Help slips
 ca W w
 ca WQ wq
 ca Wq wq
 ca Q q
-
-" File types
-au BufNewFile,BufRead *.lex setlocal filetype=sml
-au BufNewFile,BufRead *.grm setlocal filetype=sml
-au BufNewFile,BufRead *.in setlocal filetype=otter
-
-" Shortcuts
-map <A-]> :tabn<CR>
-map <A-[> :tabp<CR>
-map <C-t> :tabnew<CR>
+ca X x
