@@ -9,6 +9,7 @@ Bundle 'flipxfx/vim-settings'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/closetag.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-fugitive'
@@ -66,7 +67,7 @@ set autoread
 set nowrap
 set smartcase
 set wildmenu
-set wildignore=*.o,*.~,*.pyc,*.exe
+set wildignore+=*.o,*.~,*.pyc,*.exe,*/tmp/*,*.so,*.swp,*.zip,*\\tmp\\*
 set nofoldenable
 set foldmethod=syntax
 set textwidth=0
@@ -106,7 +107,6 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-h> <c-w>h
 map <c-l> <c-w>l
-map <c-w> <c-w>w
 map <leader>sc :setlocal spell!<cr>
 
 " Help slips
