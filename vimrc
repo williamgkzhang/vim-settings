@@ -25,10 +25,6 @@ Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
 Bundle 'hdima/python-syntax'
 Bundle 'tpope/vim-rails'
 
-" CloseTag
-autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
-
 " NERD Tree
 let g:nerdtree_tabs_open_on_gui_startup=0
 map <a-tab> :NERDTreeTabsToggle<cr>
