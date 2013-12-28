@@ -8,76 +8,76 @@ endif
 let g:colors_name="flipxfx"
 
 hi Normal          guifg=#F8F8F2 guibg=#1B1B1B	gui=none
-hi Comment         guifg=#465457				gui=none
+hi Comment         guifg=#465457								gui=none
 hi CursorLine                    guibg=#292929	gui=none
 hi CursorColumn                  guibg=#292929	gui=none
 hi LineNr          guifg=#BCBCBC guibg=#232323	gui=none
 hi NonText         guifg=#BCBCBC guibg=#232323	gui=none
-hi Boolean         guifg=#AE81FF				gui=none
-hi Character       guifg=#E6DB74				gui=none
-hi Number          guifg=#AE81FF				gui=none
-hi String          guifg=#E6DB74				gui=none
-hi Conditional     guifg=#F92672				gui=none
-hi Constant        guifg=#AE81FF				gui=none
+hi Boolean         guifg=#AE81FF								gui=none
+hi Character       guifg=#E6DB74								gui=none
+hi Number          guifg=#AE81FF								gui=none
+hi String          guifg=#E6DB74								gui=none
+hi Conditional     guifg=#F92672								gui=none
+hi Constant        guifg=#AE81FF								gui=none
 hi Cursor          guifg=#000000 guibg=#FFFFFF	gui=none
-hi Debug           guifg=#BCA3A3				gui=bold
-hi Define          guifg=#66D9EF				gui=none
-hi Delimiter       guifg=#8F8F8F				gui=none
+hi Debug           guifg=#BCA3A3								gui=bold
+hi Define          guifg=#66D9EF								gui=none
+hi Delimiter       guifg=#8F8F8F								gui=none
 hi DiffAdd                       guibg=#13354A	gui=none
 hi DiffChange      guifg=#89807D guibg=#4C4745	gui=none
 hi DiffDelete      guifg=#960050 guibg=#1E0010	gui=none
 hi DiffText                      guibg=#4C4745	gui=italic,bold
-hi Directory       guifg=#A6E22E				gui=none
+hi Directory       guifg=#A6E22E								gui=none
 hi Error           guifg=#960050 guibg=#1E0010	gui=none
 hi ErrorMsg        guifg=#F92672 guibg=#232323	gui=bold
-hi Exception       guifg=#A6E22E				gui=none
-hi Float           guifg=#AE81FF				gui=none
+hi Exception       guifg=#A6E22E								gui=none
+hi Float           guifg=#AE81FF								gui=none
 hi FoldColumn      guifg=#465457 guibg=#000000	gui=none
 hi Folded          guifg=#465457 guibg=#000000	gui=none
-hi Function        guifg=#A6E22E				gui=none
-hi Identifier      guifg=#FD971F				gui=none
-hi Ignore          guifg=#808080 guibg=bg		gui=none
+hi Function        guifg=#A6E22E								gui=none
+hi Identifier      guifg=#FD971F								gui=none
+hi Ignore          guifg=#808080 guibg=bg				gui=none
 hi IncSearch       guifg=#000000 guibg=#F92672	gui=none
-hi Keyword         guifg=#F92672				gui=none
-hi Label           guifg=#E6DB74				gui=none
-hi Macro           guifg=#C4BE89				gui=italic
-hi SpecialKey      guifg=#66D9EF				gui=italic
+hi Keyword         guifg=#F92672								gui=none
+hi Label           guifg=#E6DB74								gui=none
+hi Macro           guifg=#C4BE89								gui=italic
+hi SpecialKey      guifg=#66D9EF								gui=italic
 hi MatchParen      guifg=#000000 guibg=#FD971F	gui=bold
-hi ModeMsg         guifg=#E6DB74				gui=none
-hi MoreMsg         guifg=#E6DB74				gui=none
-hi Operator        guifg=#F92672				gui=none
+hi ModeMsg         guifg=#E6DB74								gui=none
+hi MoreMsg         guifg=#E6DB74								gui=none
+hi Operator        guifg=#F92672								gui=none
 hi Pmenu           guifg=#66D9EF guibg=#000000	gui=none
 hi PmenuSel                      guibg=#808080	gui=none
 hi PmenuSbar                     guibg=#080808	gui=none
-hi PmenuThumb      guifg=#66D9EF				gui=none
-hi PreCondit       guifg=#A6E22E				gui=bold
-hi PreProc         guifg=#A6E22E				gui=none
-hi Question        guifg=#66D9EF				gui=none
-hi Repeat          guifg=#F92672				gui=none
+hi PmenuThumb      guifg=#66D9EF								gui=none
+hi PreCondit       guifg=#A6E22E								gui=bold
+hi PreProc         guifg=#A6E22E								gui=none
+hi Question        guifg=#66D9EF								gui=none
+hi Repeat          guifg=#F92672								gui=none
 " Changed
 hi Search          guifg=#FFFFFF guibg=#F92672	gui=none
 hi SignColumn      guifg=#A6E22E guibg=#232323	gui=none
-hi SpecialChar     guifg=#F92672				gui=none
-hi SpecialComment  guifg=#465457				gui=bold
-hi Special         guifg=#66D9EF guibg=bg		gui=none
-hi SpecialKey      guifg=#888A85				gui=italic
+hi SpecialChar     guifg=#F92672								gui=none
+hi SpecialComment  guifg=#465457								gui=bold
+hi Special         guifg=#66D9EF guibg=bg				gui=none
+hi SpecialKey      guifg=#888A85								gui=italic
 if has("spell")
     hi SpellBad    guisp=#FF0000 gui=undercurl
     hi SpellCap    guisp=#7070F0 gui=undercurl
     hi SpellLocal  guisp=#70F0F0 gui=undercurl
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
-hi Statement       guifg=#F92672				gui=none
-hi StatusLine      guifg=#455354 guibg=fg		gui=none
+hi Statement       guifg=#F92672								gui=none
+hi StatusLine      guifg=#455354 guibg=bg				gui=none
 hi StatusLineNC    guifg=#808080 guibg=#080808	gui=none
-hi StorageClass    guifg=#FD971F				gui=italic
-hi Structure       guifg=#66D9EF				gui=none
-hi Tag             guifg=#F92672				gui=italic
-hi Title           guifg=#ef5939				gui=none
-hi Todo            guifg=#FFFFFF guibg=bg		gui=bold
-hi Typedef         guifg=#66D9EF				gui=none
-hi Type            guifg=#66D9EF				gui=none
-hi Underlined      guifg=#808080				gui=underline
+hi StorageClass    guifg=#FD971F								gui=italic
+hi Structure       guifg=#66D9EF								gui=none
+hi Tag             guifg=#F92672								gui=italic
+hi Title           guifg=#ef5939								gui=none
+hi Todo            guifg=#FFFFFF guibg=bg				gui=bold
+hi Typedef         guifg=#66D9EF								gui=none
+hi Type            guifg=#66D9EF								gui=none
+hi Underlined      guifg=#808080								gui=underline
 hi VertSplit       guifg=#808080 guibg=#080808	gui=bold
 hi VisualNOS                     guibg=#403D3D	gui=none
 hi Visual                        guibg=#403D3D	gui=none
@@ -99,7 +99,7 @@ if &t_Co > 255
    hi DiffAdd                     ctermbg=24
    hi DiffChange      ctermfg=181 ctermbg=239
    hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102	cterm=bold
+   hi DiffText                    ctermbg=102		cterm=bold
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
@@ -115,7 +115,7 @@ if &t_Co > 255
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
-   hi MatchParen      ctermfg=16  ctermbg=208	cterm=bold
+   hi MatchParen      ctermfg=16  ctermbg=208		cterm=bold
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
