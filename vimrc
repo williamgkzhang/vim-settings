@@ -87,8 +87,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set backspace=2
-set noexpandtab
-set nosmarttab
 
 " Shortcuts
 let mapleader = ","
