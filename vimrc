@@ -10,4 +10,4 @@ Bundle 'gmarik/vundle'
 Bundle 'flipxfx/vim-settings'
 
 " Load external myvimrc from personal settings
-exec ":source " . bundle_path . "/vim-settings/myvimrc"
+exec ":source " . bundle_path . "/vim-settings/vimrc.vim"
