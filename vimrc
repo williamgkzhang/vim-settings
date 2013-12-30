@@ -31,12 +31,11 @@ map <a-tab> :NERDTreeTabsToggle<cr>
 
 " Airline
 if has('gui_running')
-	let g:airline_powerline_fonts=1
+  let g:airline_powerline_fonts=1
 end
 
 " RSpec
 let g:RspecKeymap=0
-
 
 """""""""""""""""""
 " Vim Settings
@@ -85,10 +84,11 @@ filetype indent on
 " Indent Settings
 set autoindent
 set tabstop=2
-set softtabstop=2
 set shiftwidth=2
+set softtabstop=2
 set backspace=2
 set noexpandtab
+set nosmarttab
 
 " Shortcuts
 let mapleader = ","
