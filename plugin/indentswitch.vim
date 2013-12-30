@@ -38,9 +38,11 @@ function! Ishow()
 endfunction
 
 if g:indentswitch_indent == "tabs"
-  call Itabs()
+  set noexpandtab
+  set nosmarttab
 else
-  call Ispaces()
+  set expandtab
+  set smarttab
 endif
 
 command! -bar -nargs=0 Itoggle call Itoggle()
