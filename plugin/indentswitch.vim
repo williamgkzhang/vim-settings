@@ -54,4 +54,4 @@ map <leader>it :Itoggle<cr>
 map <leader>i<tab> :Itabs<cr>
 map <leader>i<space> :Ispaces<cr>
 map <leader>is :Ishow<cr>
-map <leader>ir gg=G
+map <leader>ir gg=G''
