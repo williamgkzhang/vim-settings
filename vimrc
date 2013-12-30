@@ -48,7 +48,7 @@ set guifont=Monaco_for_Powerline:h13
 
 " Hide toolbar
 if has("gui_running")
-	set guioptions=-r
+  set guioptions=-r
 endif
 
 " Misc Settings
