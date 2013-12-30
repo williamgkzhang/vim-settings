@@ -1,5 +1,8 @@
+" Path to the bundle folder
+let bundle_path = "~/.vim/bundle"
+ 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
+exec ":set runtimepath+=" . bundle_path . "/vundle/"
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
@@ -7,4 +10,4 @@ Bundle 'gmarik/vundle'
 Bundle 'flipxfx/vim-settings'
 
 " Load external myvimrc from personal settings
-source ~/.vim/bundle/vim-settings/myvimrc
+exec ":source " . bundle_path . "/vim-settings/myvimrc"
