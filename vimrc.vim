@@ -1,24 +1,24 @@
 """""""""""""""""""
 " Plugins
 """""""""""""""""""
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Raimondi/delimitMate'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-fugitive'
-Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-surround'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'skwp/vim-rspec'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-markdown'
-Bundle 'othree/html5.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'ChrisYip/Better-CSS-Syntax-for-Vim'
-Bundle 'hdima/python-syntax'
-Bundle 'tpope/vim-rails'
+Bundle "bling/vim-airline"
+Bundle "scrooloose/nerdtree"
+Bundle "jistr/vim-nerdtree-tabs"
+Bundle "kien/ctrlp.vim"
+Bundle "Raimondi/delimitMate"
+Bundle "tpope/vim-ragtag"
+Bundle "tpope/vim-fugitive"
+Bundle "ervandew/supertab"
+Bundle "tpope/vim-surround"
+Bundle "terryma/vim-multiple-cursors"
+Bundle "skwp/vim-rspec"
+Bundle "scrooloose/syntastic"
+Bundle "tpope/vim-markdown"
+Bundle "othree/html5.vim"
+Bundle "pangloss/vim-javascript"
+Bundle "ChrisYip/Better-CSS-Syntax-for-Vim"
+Bundle "hdima/python-syntax"
+Bundle "tpope/vim-rails"
 
 " NERD Tree
 let g:nerdtree_tabs_open_on_gui_startup=0
@@ -26,7 +26,7 @@ map <a-tab> :NERDTreeTabsToggle<cr>
 map <F2> :NERDTreeTabsToggle<cr>
 
 " Airline
-if has('gui_running')
+if has("gui_running")
   let g:airline_powerline_fonts=1
 end
 
@@ -88,10 +88,10 @@ set shiftwidth=2
 set softtabstop=2
 set backspace=2
 
-" Shortcuts
+" Shorcuts
 let mapleader = ","
 let g:mapleader = ","
-nmap <leader>w :w<cr>
+map <leader>w :w<cr>
 map <a-]> :tabn<cr>
 map <a-[> :tabp<cr>
 map <c-t> :tabnew<cr>
@@ -102,6 +102,7 @@ map <c-k> <c-w>k
 map <c-h> <c-w>h
 map <c-l> <c-w>l
 map <leader>sc :setlocal spell!<cr>
+map <leader>xt :let _s=@/<bar>:%s/\s\+$//e<bar>:let @/=_s<bar>:noh<cr>:echo "Trailing whitespace removed"<cr>
 
 " Help slips
 ca W w
