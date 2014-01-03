@@ -11,4 +11,5 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
  - Windows - ```C:/Users/USERNAME/vimfiles/bundle/vundle```
 - Change local vimrc to vim-settings [vimrc](vimrc), updating ```bundle_path``` to point to the bundle folder
 - Use ```:BundleInstall``` to install the bundles in vimrc then vimrc.vim
-- To update simply run ```:BundleUpdate``` then ```:BundleInstall``` if any new bundles are added to vimrc.vim
+- To update simply run ```:BundleUpdate``` 
+ - If new bundles are added to vimrc.vim then run ```:BundleInstall``` after update
