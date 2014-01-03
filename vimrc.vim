@@ -23,6 +23,7 @@ Bundle 'tpope/vim-rails'
 " NERD Tree
 let g:nerdtree_tabs_open_on_gui_startup=0
 map <a-tab> :NERDTreeTabsToggle<cr>
+map <F2> :NERDTreeTabsToggle<cr>
 
 " Airline
 if has('gui_running')
