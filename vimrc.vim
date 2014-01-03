@@ -39,7 +39,11 @@ let g:RspecKeymap=0
 colors flipxfx
 
 " Font
-set guifont=Monaco_for_Powerline:h13
+if has("win32")
+  set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
+else
+  set guifont=Monaco_for_Powerline:h13
+end
 
 " Hide toolbar
 if has("gui_running")
