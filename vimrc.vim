@@ -92,6 +92,7 @@ set backspace=2
 let mapleader = ","
 let g:mapleader = ","
 map <leader>w :w<cr>
+map <leader>q :q<cr>
 map <a-]> :tabn<cr>
 map <a-[> :tabp<cr>
 map <c-t> :tabnew<cr>
