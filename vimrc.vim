@@ -32,6 +32,9 @@ end
 " RSpec
 let g:RspecKeymap=0
 
+" Supertab
+let g:SuperTabDefaultCompletionType="context"
+
 """""""""""""""""""
 " Vim Settings
 """""""""""""""""""
@@ -79,6 +82,7 @@ set noswapfile
 syntax on
 filetype plugin on
 filetype indent on
+set omnifunc=syntaxcomplete#Complete
 
 " Indent Settings
 set autoindent
