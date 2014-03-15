@@ -3,7 +3,7 @@ let bundle_path = "~/.vim/bundle"
 
 " Vundle
 exec ":set runtimepath+=" . bundle_path . "/vundle/"
-call vundle#rc()
+call vundle#rc(bundle_path)
 Bundle 'gmarik/vundle'
 
 " Personal settings
