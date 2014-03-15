@@ -18,6 +18,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "ChrisYip/Better-CSS-Syntax-for-Vim"
 Bundle "hdima/python-syntax"
 Bundle "tpope/vim-rails"
+Bundle 'digitaltoad/vim-jade'
 
 " NERD Tree
 let g:nerdtree_tabs_open_on_gui_startup=0
