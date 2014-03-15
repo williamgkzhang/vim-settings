@@ -3,7 +3,7 @@ if exists("indentswitch_loaded")
 endif
 let indentswitch_loaded = 1
 
-if !exists('g:indentswitch_indent')
+if !exists("g:indentswitch_indent")
   let g:indentswitch_indent = "spaces"
 endif
 
