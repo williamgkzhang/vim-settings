@@ -102,6 +102,8 @@ map <c-h> <c-w>h
 map <c-l> <c-w>l
 map <leader>sc :setlocal spell!<cr>
 map <leader>xt :let _s=@/<bar>:%s/\s\+$//e<bar>:let @/=_s<bar>:noh<cr>:echo "Trailing whitespace removed"<cr>
+map <leader>s sort i
+map <leader>sn sort n
 
 " Help slips
 ca W w
