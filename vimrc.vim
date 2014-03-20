@@ -72,6 +72,8 @@ set laststatus=2
 set mouse=a
 set clipboard=unnamed
 set lazyredraw
+set splitbelow
+set splitright
 set encoding=utf8
 set fileformats=unix,dos,mac
 set nobackup
