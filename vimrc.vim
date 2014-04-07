@@ -93,6 +93,12 @@ if has("gui_running")
   set guioptions=-r
 endif
 
+" Disable scrollbars
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
