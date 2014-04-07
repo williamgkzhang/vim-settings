@@ -72,6 +72,9 @@ end
 " Airline smarter tabline
 let g:airline#extensions#tabline#enabled=1
 
+" Airline only show filename in tabline
+let g:airline#extensions#tabline#fnamemod=":t"
+
 " RSpec turn off default mappings
 let g:RspecKeymap=0
 
