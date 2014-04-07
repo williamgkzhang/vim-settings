@@ -91,16 +91,11 @@ else
   set guifont=Monaco_for_Powerline:h13
 end
 
-" Hide toolbar if GUI running
-if has("gui_running")
-  set guioptions=-r
-endif
-
-" Disable scrollbars
-set guioptions-=r
+" Hide scrollbars
 set guioptions-=R
-set guioptions-=l
+set guioptions=-r
 set guioptions-=L
+set guioptions-=l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
