@@ -92,10 +92,16 @@ else
 end
 
 " Hide scrollbars
+set guioptions-=r
 set guioptions-=R
-set guioptions=-r
-set guioptions-=L
 set guioptions-=l
+set guioptions-=L
+
+" Hide menubar
+set guioptions-=m
+
+" Hide toolbar
+set guioptions-=T
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
