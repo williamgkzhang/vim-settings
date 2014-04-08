@@ -246,6 +246,9 @@ nmap <leader>bv :vnew<cr>
 " Remove the current buffer
 nmap <leader>bd :bprevious<cr>:bdelete #<cr>
 
+" Remove the current buffer with override
+nmap <leader>bD :bprevious<cr>:bdelete! #<cr>
+
 " Show buffer list
 nmap <leader>bl :ls<cr>
 
