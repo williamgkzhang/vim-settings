@@ -10,6 +10,9 @@ Bundle "scrooloose/nerdtree"
 " NERDTree as a static panel across tabs
 Bundle "jistr/vim-nerdtree-tabs"
 
+" NERDCommenter
+Bundle "scrooloose/nerdcommenter"
+
 " Fuzzy file finder
 Bundle "kien/ctrlp.vim"
 
