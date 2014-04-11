@@ -66,8 +66,6 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 " NERDTree toggle
 map <a-tab> :NERDTreeTabsToggle<cr>
-
-" NERDTree toggle
 map <F2> :NERDTreeTabsToggle<cr>
 
 " Airline autopopulate symbols
