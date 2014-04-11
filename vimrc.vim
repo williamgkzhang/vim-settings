@@ -239,19 +239,25 @@ nmap gb :bnext<cr>
 nmap gB :bprevious<cr>
 
 " New buffer in current area
-nmap <leader>be :enew<cr>
+nmap <leader>ee :enew<cr>
 
 " New buffer in split
-nmap <leader>bn :new<cr>
+nmap <leader>es :new<cr>
 
 " New buffer in vertical split
-nmap <leader>bv :vnew<cr>
+nmap <leader>ev :vnew<cr>
 
 " Remove the current buffer
 nmap <leader>bd :bprevious<cr>:bdelete #<cr>
 
 " Remove the current buffer with override
 nmap <leader>bD :bprevious<cr>:bdelete! #<cr>
+
+" Split current file
+nmap <leader>bs :split<cr>
+
+" Vertical split current file
+nmap <leader>bv :vsplit<cr>
 
 " Show buffer list
 nmap <leader>bl :ls<cr>
