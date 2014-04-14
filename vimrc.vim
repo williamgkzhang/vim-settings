@@ -225,9 +225,9 @@ set backspace=2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set mapleader to comma
-let mapleader=","
-let g:mapleader=","
+" Set mapleader
+let mapleader=" "
+let g:mapleader=" "
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
