@@ -295,6 +295,14 @@ nmap <leader>sc :setlocal spell!<cr>
 " Remove trailing whitespace
 nmap <leader>xt :let _s=@/<bar>:%s/\s\+$//e<bar>:let @/=_s<bar>:noh<cr>:echo "Trailing whitespace removed"<cr>
 
+" Sort lines alphabetically
+nmap <leader>sl :sort i<cr>
+vmap <leader>sl :sort i<cr>
+
+" Sort lines numerically
+nmap <leader>sn :sort n<cr>
+vmap <leader>sn :sort n<cr>
+
 " Space to toggle folding
 nmap <space> za
 vmap <space> zf
