@@ -287,7 +287,7 @@ nmap <c-l> <c-w>l
 " Misc Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn off search highlight
-nmap <s-/> :noh<cr>
+nmap ? :noh<cr>
 
 " Toggle spell check
 nmap <leader>sc :setlocal spell!<cr>
