@@ -223,8 +223,8 @@ set backspace=2
 " Leader for Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set mapleader
-let mapleader=" "
-let g:mapleader=" "
+let mapleader=","
+let g:mapleader=","
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
