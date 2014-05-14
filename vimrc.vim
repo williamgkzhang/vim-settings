@@ -287,7 +287,7 @@ nmap <c-l> <c-w>l
 " Misc Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn off search highlight
-nmap <s-space> :noh<cr>
+nmap <s-/> :noh<cr>
 
 " Toggle spell check
 nmap <leader>sc :setlocal spell!<cr>
@@ -295,11 +295,9 @@ nmap <leader>sc :setlocal spell!<cr>
 " Remove trailing whitespace
 nmap <leader>xt :let _s=@/<bar>:%s/\s\+$//e<bar>:let @/=_s<bar>:noh<cr>:echo "Trailing whitespace removed"<cr>
 
-" Sort lines alphabetically
-nmap <leader>sl :sort i<cr>
-
-" Sort lines numerically
-nmap <leader>sn :sort n<cr>
+" Space to toggle folding
+nmap <space> za
+vmap <space> zf
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Slips
