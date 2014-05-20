@@ -201,6 +201,9 @@ filetype plugin on
 " Enable filetype indenting
 filetype indent on
 
+" Set autocomplete to syntax completion
+set omnifunc=syntaxcomplete#Complete
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
