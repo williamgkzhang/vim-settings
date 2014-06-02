@@ -55,6 +55,9 @@ Bundle "skwp/vim-rspec"
 " Jade highlighting
 Bundle "digitaltoad/vim-jade"
 
+" C# highlighting
+Bundle "OrangeT/vim-csharp"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
