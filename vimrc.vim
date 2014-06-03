@@ -62,8 +62,8 @@ Bundle "OrangeT/vim-csharp"
 let g:nerdtree_tabs_open_on_gui_startup=0
 
 " NERDTree toggle
-map <a-tab> :NERDTreeTabsToggle<cr>
-map <F2> :NERDTreeTabsToggle<cr>
+map <a-tab> :NERDTreeToggle<cr>
+map <F2> :NERDTreeToggle<cr>
 
 " NERDTree close on open file
 let NERDTreeQuitOnOpen=1
