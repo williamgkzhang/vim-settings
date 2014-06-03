@@ -56,7 +56,7 @@ Bundle "digitaltoad/vim-jade"
 Bundle "OrangeT/vim-csharp"
 
 " Slim highlighting
-Bundle "slim-template/vim-slim.git"
+Bundle "slim-template/vim-slim"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
