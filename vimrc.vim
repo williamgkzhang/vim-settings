@@ -37,9 +37,6 @@ Bundle "othree/html5.vim"
 " Javascript syntax and indent
 Bundle "pangloss/vim-javascript"
 
-" CSS highlighting
-Bundle "ChrisYip/Better-CSS-Syntax-for-Vim"
-
 " Python highlighting
 Bundle "hdima/python-syntax"
 
