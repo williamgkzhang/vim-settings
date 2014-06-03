@@ -7,9 +7,6 @@ Bundle "bling/vim-airline"
 " Filesystem explorer
 Bundle "scrooloose/nerdtree"
 
-" NERDTree as a static panel across tabs
-Bundle "jistr/vim-nerdtree-tabs"
-
 " NERDCommenter
 Bundle "scrooloose/nerdcommenter"
 
@@ -70,6 +67,9 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 " NERDTree toggle
 map <a-tab> :NERDTreeTabsToggle<cr>
 map <F2> :NERDTreeTabsToggle<cr>
+
+" NERDTree close on open file
+let NERDTreeQuitOnOpen=1
 
 " Airline autopopulate symbols
 if has("gui_running")
