@@ -26,7 +26,7 @@ hi Delimiter       guifg=#8F8F8F								gui=none
 hi DiffAdd                       guibg=#13354A	gui=none
 hi DiffChange      guifg=#89807D guibg=#4C4745	gui=none
 hi DiffDelete      guifg=#960050 guibg=#1E0010	gui=none
-hi DiffText                      guibg=#4C4745	gui=italic,bold
+hi DiffText                      guibg=#4C4745	gui=bold
 hi Directory       guifg=#A6E22E								gui=none
 hi Error           guifg=#960050 guibg=#1E0010	gui=none
 hi ErrorMsg        guifg=#F92672 guibg=#232323	gui=bold
@@ -40,8 +40,8 @@ hi Ignore          guifg=#808080 guibg=bg				gui=none
 hi IncSearch       guifg=#000000 guibg=#F92672	gui=none
 hi Keyword         guifg=#F92672								gui=none
 hi Label           guifg=#E6DB74								gui=none
-hi Macro           guifg=#C4BE89								gui=italic
-hi SpecialKey      guifg=#66D9EF								gui=italic
+hi Macro           guifg=#C4BE89								gui=none
+hi SpecialKey      guifg=#66D9EF								gui=none
 hi MatchParen      guifg=#000000 guibg=#FD971F	gui=bold
 hi ModeMsg         guifg=#E6DB74								gui=none
 hi MoreMsg         guifg=#E6DB74								gui=none
@@ -60,7 +60,7 @@ hi SignColumn      guifg=#A6E22E guibg=#232323	gui=none
 hi SpecialChar     guifg=#F92672								gui=none
 hi SpecialComment  guifg=#465457								gui=bold
 hi Special         guifg=#66D9EF guibg=bg				gui=none
-hi SpecialKey      guifg=#888A85								gui=italic
+hi SpecialKey      guifg=#888A85								gui=none
 if has("spell")
 	hi SpellBad    guisp=#FF0000 gui=undercurl
 	hi SpellCap    guisp=#7070F0 gui=undercurl
@@ -70,9 +70,9 @@ endif
 hi Statement       guifg=#F92672								gui=none
 hi StatusLine      guifg=#455354 guibg=bg				gui=none
 hi StatusLineNC    guifg=#808080 guibg=#080808	gui=none
-hi StorageClass    guifg=#FD971F								gui=italic
+hi StorageClass    guifg=#FD971F								gui=none
 hi Structure       guifg=#66D9EF								gui=none
-hi Tag             guifg=#F92672								gui=italic
+hi Tag             guifg=#F92672								gui=none
 hi Title           guifg=#ef5939								gui=none
 hi Todo            guifg=#FFFFFF guibg=bg				gui=bold
 hi Typedef         guifg=#66D9EF								gui=none
