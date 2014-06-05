@@ -152,10 +152,10 @@ set nofoldenable
 " Fold by syntax highlighting
 set foldmethod=syntax
 
-" Minimum number of screen rows above and below the cursor 
+" Minimum number of screen rows above and below the cursor
 set scrolloff=4
 
-" Minimum number of screen columns to the left and right of the cursor 
+" Minimum number of screen columns to the left and right of the cursor
 set sidescrolloff=0
 
 " Always show the status line
@@ -180,7 +180,8 @@ set splitright
 set encoding=utf8
 
 " File type preferences
-set fileformats=unix,dos,mac
+set fileformat=unix
+set fileformats=unix,dos
 
 " Don't create backups
 set nobackup
@@ -207,7 +208,7 @@ set omnifunc=syntaxcomplete#Complete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Automatically indent properly 
+" Automatically indent properly
 set autoindent
 
 " Represent 1 tab as 2 columns
