@@ -52,6 +52,9 @@ Bundle "digitaltoad/vim-jade"
 " C# highlighting
 Bundle "OrangeT/vim-csharp"
 
+" Coffeescript
+Bundle "kchmck/vim-coffee-script"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
