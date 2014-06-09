@@ -55,6 +55,9 @@ Bundle "OrangeT/vim-csharp"
 " Coffeescript
 Bundle "kchmck/vim-coffee-script"
 
+" CSS color
+Bundle "skammer/vim-css-color"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
