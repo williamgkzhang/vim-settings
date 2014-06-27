@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins
+" General Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Upgraded status/tabline
 Bundle "bling/vim-airline"
@@ -28,28 +28,31 @@ Bundle "tpope/vim-surround"
 " Syntax checker
 Bundle "scrooloose/syntastic"
 
-" Markdown highlighting
-Bundle "tpope/vim-markdown"
-
-" HTML5 highlighting and autocomplete
-Bundle "othree/html5.vim"
-
-" Javascript syntax and indent
-Bundle "pangloss/vim-javascript"
-
-" Python highlighting
-Bundle "hdima/python-syntax"
-
-" Ruby on Rails highlighting, navigation and helper functions
-Bundle "tpope/vim-rails"
-
 " RSpec runner
 Bundle "skwp/vim-rspec"
 
-" Jade highlighting
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Language Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown
+Bundle "tpope/vim-markdown"
+
+" HTML5
+Bundle "othree/html5.vim"
+
+" Javascript
+Bundle "pangloss/vim-javascript"
+
+" Python
+Bundle "hdima/python-syntax"
+
+" Ruby on Rails
+Bundle "tpope/vim-rails"
+
+" Jade
 Bundle "digitaltoad/vim-jade"
 
-" C# highlighting
+" C#
 Bundle "OrangeT/vim-csharp"
 
 " Coffeescript
