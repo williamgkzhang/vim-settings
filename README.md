@@ -6,13 +6,18 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 - Install font
  - Mac - [Monaco for Powerline](Monaco for Powerline.otf)
  - Windows - [DejaVu Sans Mono for Powerline](DejaVu Sans Mono for Powerline.ttf)
-- Install [vundle](https://github.com/gmarik/vundle)
+- Install [vundle](https://github.com/gmarik/vundle) with ```git clone https://github.com/gmarik/Vundle.vim.git PATH_TO_VUNDLE_FOLDER```
  - Mac - ```~/.vim/bundle/vundle```
  - Windows - ```C:/Users/USERNAME/vimfiles/bundle/vundle```
-- Change local vimrc to vim-settings [vimrc](vimrc), updating ```bundle_path``` to point to the bundle folder
-- Open Vim and run ```:BundleInstall``` to install vundle and vim-settings
-- Reopen Vim and run ```:BundleInstall``` again to install bundles in [vimrc.vim](vimrc.vim)
+- Open Vim and run ```:e $MYVIMRC```
+- Change this file to vim-settings [vimrc](vimrc), updating ```bundle_path``` to point to the bundle folder created above
+- Run ```:so $MYVIMRC```
+- Run ```:BundleInstall``` to install vim-settings
+- Run ```:so $MYVIMRC```
+- Run ```:BundleInstall``` again to install bundles in [vimrc.vim](vimrc.vim)
+- And one last ```:so $MYVIMRC```
 
 ### Update
-- To update simply run ```:BundleUpdate``` 
-- If new bundles are added to [vimrc.vim](vimrc.vim) then run ```:BundleInstall``` after update
+- Run ```:BundleUpdate```
+- Then run ```:so $MYVIMRC```
+- And if new bundles are added to [vimrc.vim](vimrc.vim), then run ```:BundleInstall``` after update
