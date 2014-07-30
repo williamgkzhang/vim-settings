@@ -10,7 +10,7 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
  - Mac - ```~/.vim/bundle/vundle```
  - Windows - ```C:/Users/USERNAME/vimfiles/bundle/vundle```
 - Open Vim and run ```:e $MYVIMRC```
-- Change this file to vim-settings [vimrc](vimrc), updating ```bundle_path``` to point to the bundle folder created above
+- Change this file to vim-settings [vimrc](vimrc), updating ```PATH_TO_BUNDLE_FOLDER``` to to the **bundle** folder used above
 - Run ```:so $MYVIMRC```
 - Run ```:BundleInstall``` to install vim-settings
 - Run ```:so $MYVIMRC```
