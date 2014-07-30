@@ -1,5 +1,5 @@
 " Path to the bundle folder
-let bundle_path = "~/.vim/bundle"
+let bundle_path = "PATH_TO_BUNDLE_FOLDER"
 
 " Vundle
 exec ":set runtimepath+=" . bundle_path . "/vundle/"
