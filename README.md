@@ -12,10 +12,7 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 - Open Vim and run ```:e $MYVIMRC```
 - Change this file to vim-settings [vimrc](vimrc), updating ```PATH_TO_BUNDLE_FOLDER``` to to the **bundle** folder used above
 - Run ```:so $MYVIMRC```
-- Run ```:BundleInstall``` to install vim-settings
-- Run ```:so $MYVIMRC```
-- Run ```:BundleInstall``` again to install bundles in [vimrc.vim](vimrc.vim)
-- And one last ```:so $MYVIMRC```
+- Run ```:VimSettingsInit``` to install vim-settings and bundles within vim-settings
 
 ### Update
 - Run ```:BundleUpdate```
