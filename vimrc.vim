@@ -2,61 +2,61 @@
 " General Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Upgraded status/tabline
-Bundle "bling/vim-airline"
+Plugin "bling/vim-airline"
 
 " Filesystem explorer
-Bundle "scrooloose/nerdtree"
+Plugin "scrooloose/nerdtree"
 
 " NERDCommenter
-Bundle "scrooloose/nerdcommenter"
+Plugin "scrooloose/nerdcommenter"
 
 " Fuzzy file finder
-Bundle "kien/ctrlp.vim"
+Plugin "kien/ctrlp.vim"
 
 " Ghetto XML/HTML mappings
-Bundle "tpope/vim-ragtag"
+Plugin "tpope/vim-ragtag"
 
 " Git wrapper
-Bundle "tpope/vim-fugitive"
+Plugin "tpope/vim-fugitive"
 
 " Tab autocomplete
-Bundle "ervandew/supertab"
+Plugin "ervandew/supertab"
 
 " Mappings to manipulate surroundings
-Bundle "tpope/vim-surround"
+Plugin "tpope/vim-surround"
 
 " Syntax checker
-Bundle "scrooloose/syntastic"
+Plugin "scrooloose/syntastic"
 
 " RSpec runner
-Bundle "skwp/vim-rspec"
+Plugin "skwp/vim-rspec"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Markdown
-Bundle "tpope/vim-markdown"
+Plugin "tpope/vim-markdown"
 
 " HTML5
-Bundle "othree/html5.vim"
+Plugin "othree/html5.vim"
 
 " Javascript
-Bundle "pangloss/vim-javascript"
+Plugin "pangloss/vim-javascript"
 
 " Python
-Bundle "hdima/python-syntax"
+Plugin "hdima/python-syntax"
 
 " Ruby on Rails
-Bundle "tpope/vim-rails"
+Plugin "tpope/vim-rails"
 
 " Jade
-Bundle "digitaltoad/vim-jade"
+Plugin "digitaltoad/vim-jade"
 
 " C#
-Bundle "OrangeT/vim-csharp"
+Plugin "OrangeT/vim-csharp"
 
 " Coffeescript
-Bundle "kchmck/vim-coffee-script"
+Plugin "kchmck/vim-coffee-script"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
