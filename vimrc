@@ -13,3 +13,18 @@ Bundle 'flipxfx/vim-settings'
 if filereadable(bundle_path . "/vim-settings/vimrc.vim")
   exec ":source " . bundle_path . "/vim-settings/vimrc.vim"
 endif
+
+" vim-settings init helper
+if exists("vimsettingsinit_loaded")
+  finish
+endif
+let vimsettingsinit_loaded = 1
+function! VimSettingsInit()
+  execute ":BundleInstall"
+  execute ":bd"
+  execute ":so $MYVIMRC"
+  execute ":BundleInstall"
+  execute ":bd"
+  execute ":so $MYVIMRC"
+endfunction
+command! -bar -nargs=0 VimSettingsInit call VimSettingsInit()
