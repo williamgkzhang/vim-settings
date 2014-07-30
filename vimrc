@@ -20,10 +20,10 @@ if exists("vimsettingsinit_loaded")
 endif
 let vimsettingsinit_loaded = 1
 function! VimSettingsInit()
-  execute ":BundleInstall"
+  execute ":PluginInstall"
   execute ":bd"
   execute ":so $MYVIMRC"
-  execute ":BundleInstall"
+  execute ":PluginInstall"
   execute ":bd"
   execute ":so $MYVIMRC"
 endfunction
