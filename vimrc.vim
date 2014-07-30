@@ -294,6 +294,18 @@ nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Movement Shortcuts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Make H and L go to beginning and end of line
+noremap H ^
+noremap L $
+vnoremap L g_
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn off search highlight
@@ -315,7 +327,7 @@ vmap <leader>sn :sort n<cr>
 
 " Space to toggle folding
 nmap <space> za
-vmap <space> zf
+vmap <space> za
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Slips
