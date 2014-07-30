@@ -17,4 +17,4 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 ### Update
 - Run ```:PluginUpdate```
 - Run ```:so $MYVIMRC```
-- And if new bundles are added to vim-settings [vimrc.vim](vimrc.vim), run ```:PluginInstall``` after update
+- And if new bundles are added to vim-settings [vimrc.vim](vimrc.vim), run ```:PluginInstall```
