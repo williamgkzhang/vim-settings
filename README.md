@@ -15,6 +15,8 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 - Run ```:VimSettingsInit``` to install vim-settings and bundles within vim-settings
 
 ### Update
-- Run ```:BundleUpdate```
-- Then run ```:so $MYVIMRC```
-- And if new bundles are added to [vimrc.vim](vimrc.vim), then run ```:BundleInstall``` after update
+- Run ```:PluginUpdate```
+- Run ```:so $MYVIMRC```
+- And if new bundles are added to vim-settings [vimrc.vim](vimrc.vim)
+ - Run ```:PluginInstall``` after update
+ - Run ```:so $MYVIMRC```
