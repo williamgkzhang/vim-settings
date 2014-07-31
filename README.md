@@ -9,8 +9,8 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 - Install [vundle](https://github.com/gmarik/vundle) with ```git clone https://github.com/gmarik/Vundle.vim.git PATH_TO_VUNDLE_FOLDER```
  - Mac - ```~/.vim/bundle/vundle```
  - Windows - ```C:/Users/USERNAME/vimfiles/bundle/vundle```
-- Open Vim and run ```:e $MYVIMRC```
-- Change this file to vim-settings [vimrc](vimrc#L2), updating ```PATH_TO_BUNDLE_FOLDER``` to to the **bundle** folder used above
+- Open Vim and open your local Vim settings file with ```:e $MYVIMRC```
+- Change your local Vim settings to [vimrc](vimrc), updating [```vimsettings_bundlepath```](vimrc#L2) and [```vimsettings_username```](vimrc#L4)
 - Run ```:so $MYVIMRC```
 - Run ```:VimSettingsInit``` to install vim-settings and plugins within vim-settings
 
@@ -20,6 +20,6 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 - And if new bundles are added to vim-settings [vimrc.vim](vimrc.vim), run ```:PluginInstall```
 
 ### Make Update 
+- You will need to have forked vim-settings to do this
 - Make changes to vim-settings locally
 - Commit and push the changes via git
-- *Note you will need to fork vim-settings to do this and change [vimrc](vimrc#L10) to point to your forked vim-settings.*
