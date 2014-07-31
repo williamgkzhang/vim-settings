@@ -14,7 +14,11 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 - Run ```:so $MYVIMRC```
 - Run ```:VimSettingsInit``` to install vim-settings and plugins within vim-settings
 
-### Update
+### Make Update
+- Make changes to vim-settings locally
+- Commit and push the changes via git
+
+### Pull Update
 - Run ```:PluginUpdate```
 - Run ```:so $MYVIMRC```
 - And if new bundles are added to vim-settings [vimrc.vim](vimrc.vim), run ```:PluginInstall```
