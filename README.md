@@ -17,7 +17,7 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 ### Pull Update
 - Run ```:PluginUpdate```
 - Run ```:so $MYVIMRC```
-- And if new bundles are added to vim-settings [vimrc.vim](vimrc.vim), run ```:PluginInstall```
+- And if new bundles are added to vim-settings [vim-settings.vim](vim-settings.vim), run ```:PluginInstall```
 
 ### Make Update 
 - You will need to have forked vim-settings to do this
