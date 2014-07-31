@@ -31,6 +31,9 @@ Plugin 'scrooloose/syntastic'
 " RSpec runner
 Plugin 'skwp/vim-rspec'
 
+" Colorschemes
+Plugin 'flazz/vim-colorschemes'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
