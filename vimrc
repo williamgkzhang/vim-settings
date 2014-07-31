@@ -3,17 +3,17 @@ let vimsettings_bundlepath = "BUNDLE_PATH"
 " Git username of vim-settings
 let vimsettings_username = "USERNAME"
 
-" Vundle
+" Vundle setup
 exec ":set runtimepath+=" . vimsettings_bundlepath . "/vundle/"
 call vundle#rc(vimsettings_bundlepath)
 Plugin 'gmarik/vundle'
 
-" Personal settings
+" Include vim-settings
 Plugin vimsettings_username . '/vim-settings'
 
-" Load external myvimrc from personal settings
-if filereadable(vimsettings_bundlepath . "/vim-settings/vimrc.vim")
-  let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vimrc.vim"
+" Load vim-settings.vim and tie it to $VIMSETTINGS
+let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vim-settings.vim"
+if filereadable($VIMSETTINGS)
   exec ":source " . $VIMSETTINGS
 endif
 
