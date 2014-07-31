@@ -21,5 +21,6 @@ Personal vim settings. Poke around. Take what you want. Tell me you love me.
 
 ### Make Update 
 - You will need to have forked vim-settings to do this
-- Make changes to vim-settings locally
+- Make changes to vim-settings
+ - You can open the vim-settings settings file with ```:e $VIMSETTINGS``` 
 - Commit and push the changes via git
