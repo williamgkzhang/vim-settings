@@ -1,24 +1,27 @@
 " Path to the bundle folder
-let bundle_path = "PATH_TO_BUNDLE_FOLDER"
+let vimsettings_bundlepath = "BUNDLE_PATH"
+" Git username of vim-settings
+let vimsettings_username = "USERNAME"
 
 " Vundle
-exec ":set runtimepath+=" . bundle_path . "/vundle/"
-call vundle#rc(bundle_path)
+exec ":set runtimepath+=" . vimsettings_bundlepath . "/vundle/"
+call vundle#rc(vimsettings_bundlepath)
 Plugin 'gmarik/vundle'
 
 " Personal settings
-Plugin 'flipxfx/vim-settings'
+Plugin vimsettings_username . '/vim-settings'
 
 " Load external myvimrc from personal settings
-if filereadable(bundle_path . "/vim-settings/vimrc.vim")
-  exec ":source " . bundle_path . "/vim-settings/vimrc.vim"
+if filereadable(vimsettings_bundlepath . "/vim-settings/vimrc.vim")
+  let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vimrc.vim"
+  exec ":source " . $VIMSETTINGS
 endif
 
 " vim-settings init helper
-if exists("vimsettingsinit_loaded")
+if exists("vimsettings_loaded")
   finish
 endif
-let vimsettingsinit_loaded = 1
+let vimsettings_loaded = 1
 function! VimSettingsInit()
   execute ":PluginInstall"
   execute ":bd"
