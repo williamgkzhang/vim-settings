@@ -37,9 +37,6 @@ Plugin 'flazz/vim-colorschemes'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Markdown
-Plugin 'tpope/vim-markdown'
-
 " HTML5
 Plugin 'othree/html5.vim'
 
@@ -113,6 +110,12 @@ set guioptions-=m
 
 " Hide toolbar
 set guioptions-=T
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Filetype Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
