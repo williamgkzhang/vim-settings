@@ -89,8 +89,8 @@ let g:RspecKeymap=0
 " Interface Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
-" Favorites - monokai, badwolf, jellybeans, codeschool, tomorrow-night
-colors tomorrow-night
+" Favorites - gruvbox, hybrid, monokai, badwolf, jellybeans, codeschool, tomorrow-night
+colors gruvbox
 
 " Font depending on OS
 if has("win32")
