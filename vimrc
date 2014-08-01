@@ -13,7 +13,7 @@ Plugin vimsettings_username . '/vim-settings'
 
 " Load vim-settings.vim and tie it to $VIMSETTINGS
 let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vim-settings.vim"
-if filereadable($VIMSETTINGS)
+if filereadable(glob($VIMSETTINGS))
   exec ":source " . $VIMSETTINGS
 endif
 
