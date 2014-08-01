@@ -90,7 +90,7 @@ let g:RspecKeymap=0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 " Favorites - monokai, badwolf, jellybeans, codeschool, tomorrow-night
-colors badwolf
+colors tomorrow-night
 
 " Font depending on OS
 if has("win32")

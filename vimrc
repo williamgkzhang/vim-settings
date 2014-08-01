@@ -14,7 +14,7 @@ Plugin vimsettings_username . '/vim-settings'
 " Load vim-settings.vim and tie it to $VIMSETTINGS
 let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vim-settings.vim"
 if filereadable(glob($VIMSETTINGS))
-  exec ":source " . $VIMSETTINGS
+  exec ":so " . $VIMSETTINGS
 endif
 
 " vim-settings init helper
