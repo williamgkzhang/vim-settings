@@ -31,9 +31,6 @@ Plugin 'scrooloose/syntastic'
 " RSpec runner
 Plugin 'skwp/vim-rspec'
 
-" Color Schemes
-Plugin 'flazz/vim-colorschemes'
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -57,6 +54,30 @@ Plugin 'OrangeT/vim-csharp'
 
 " Coffeescript
 Plugin 'kchmck/vim-coffee-script'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Color plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Gruvbox
+Plugin 'morhetz/gruvbox'
+
+" Solarized
+Plugin 'altercation/vim-colors-solarized'
+
+" Hybrid
+Plugin 'w0ng/vim-hybrid'
+
+" Bubblegum
+Plugin 'baskerville/bubblegum'
+
+" Luna
+Plugin 'Pychimp/vim-luna'
+
+" Badwolf
+Plugin 'sjl/badwolf'
+
+" Monokai
+Plugin 'tomasr/molokai'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
@@ -89,7 +110,6 @@ let g:RspecKeymap=0
 " Interface Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
-" hybrid, solarized, gruvbox, bubblegum, luna, badwolf, monokai
 set background=dark
 colors solarized
 
@@ -241,8 +261,8 @@ set backspace=2
 " Leader for Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set mapleader
-let mapleader=","
-let g:mapleader=","
+let mapleader=" "
+let g:mapleader=" "
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
@@ -332,10 +352,6 @@ vmap <leader>sl :sort i<cr>
 " Sort lines numerically
 nmap <leader>sn :sort n<cr>
 vmap <leader>sn :sort n<cr>
-
-" Space to toggle folding
-nmap <space> za
-vmap <space> za
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Slips
