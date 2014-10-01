@@ -214,7 +214,6 @@ set splitright
 set encoding=utf8
 
 " File type preferences
-set fileformat=unix
 set fileformats=unix,dos
 
 " Don't create backups
