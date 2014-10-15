@@ -55,6 +55,9 @@ Plugin 'OrangeT/vim-csharp'
 " Coffeescript
 Plugin 'kchmck/vim-coffee-script'
 
+" Haml, Sass, SCSS
+Plugin 'tpope/vim-haml'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
