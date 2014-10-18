@@ -2,6 +2,11 @@
 
 Personal vim settings. Poke around. Take what you want. Tell me you love me.
 
+The basic idea behind vim-settings is to sync Vim settings in a git repository using Vundle. 
+The solution is built with my settings embedded for others to use or fork and customize. 
+Once setup, any customizations and updates are synced via Vundle.
+In addition, as people fork the repo we can all take from each other and have a nice little place to see what others are doing.
+
 ### Install
 - If you want to customize the Vim settings, then fork this repository first
 - Install font
