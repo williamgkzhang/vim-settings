@@ -70,17 +70,8 @@ Plugin 'altercation/vim-colors-solarized'
 " Hybrid
 Plugin 'w0ng/vim-hybrid'
 
-" Bubblegum
-Plugin 'baskerville/bubblegum'
-
-" Luna
-Plugin 'Pychimp/vim-luna'
-
 " Badwolf
 Plugin 'sjl/badwolf'
-
-" Monokai
-Plugin 'tomasr/molokai'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
@@ -114,7 +105,7 @@ let g:RspecKeymap=0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 set background=dark
-colors solarized
+colors gruvbox
 
 " Font depending on OS
 if has("win32")
