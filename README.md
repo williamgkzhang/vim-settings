@@ -3,6 +3,7 @@
 Personal vim settings. Poke around. Take what you want. Tell me you love me.
 
 ### Install
+- If you want to customize the Vim settings, then fork this repository first
 - Install font
  - Mac - [Monaco for Powerline](Monaco for Powerline.otf)
  - Windows - [DejaVu Sans Mono for Powerline](DejaVu Sans Mono for Powerline.ttf)
