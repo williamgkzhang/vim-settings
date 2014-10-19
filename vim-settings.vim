@@ -31,6 +31,9 @@ Plugin 'scrooloose/syntastic'
 " RSpec runner
 Plugin 'skwp/vim-rspec'
 
+" Create Command Aliases
+Plugin 'vim-scripts/cmdalias.vim'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -80,8 +83,8 @@ Plugin 'sjl/badwolf'
 let g:nerdtree_tabs_open_on_gui_startup=0
 
 " NERDTree toggle
-map <a-tab> :NERDTreeToggle<cr>
-map <F2> :NERDTreeToggle<cr>
+noremap <a-tab> :NERDTreeToggle<cr>
+noremap <F2> :NERDTreeToggle<cr>
 
 " NERDTree close on open file
 let NERDTreeQuitOnOpen=1
@@ -99,6 +102,13 @@ let g:airline#extensions#tabline#fnamemod=":t"
 
 " RSpec turn off default mappings
 let g:RspecKeymap=0
+
+" CmdAlias aliases (helps slips like :W to :w)
+au VimEnter * Alias W w
+au VimEnter * Alias WQ wq
+au VimEnter * Alias Wq wq
+au VimEnter * Alias Q q
+au VimEnter * Alias X x
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
@@ -261,58 +271,58 @@ let g:mapleader=" "
 " Buffer/Tab Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Go to next buffer
-nmap gb :bnext<cr>
+nnoremap gb :bnext<cr>
 
 " Go to previous buffer
-nmap gB :bprevious<cr>
+nnoremap gB :bprevious<cr>
 
 " New buffer in current area
-nmap <leader>ee :enew<cr>
+nnoremap <leader>ee :enew<cr>
 
 " New buffer in split
-nmap <leader>es :new<cr>
+nnoremap <leader>es :new<cr>
 
 " New buffer in vertical split
-nmap <leader>ev :vnew<cr>
+nnoremap <leader>ev :vnew<cr>
 
 " Remove the current buffer
-nmap <leader>bd :bprevious<cr>:bdelete #<cr>
+nnoremap <leader>bd :bprevious<cr>:bdelete #<cr>
 
 " Remove the current buffer with override
-nmap <leader>bD :bprevious<cr>:bdelete! #<cr>
+nnoremap <leader>bD :bprevious<cr>:bdelete! #<cr>
 
 " Split current file
-nmap <leader>bs :split<cr>
+nnoremap <leader>bs :split<cr>
 
 " Vertical split current file
-nmap <leader>bv :vsplit<cr>
+nnoremap <leader>bv :vsplit<cr>
 
 " Show buffer list
-nmap <leader>bl :ls<cr>
+nnoremap <leader>bl :ls<cr>
 
 " Create new tab
-nmap <c-t> :tabnew<cr>
+nnoremap <c-t> :tabnew<cr>
 
 " Go to next tab
-nmap <a-]> :tabn<cr>
+nnoremap <a-]> :tabn<cr>
 
 " Go to previous tab
-nmap <a-[> :tabp<cr>
+nnoremap <a-[> :tabp<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " View Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Go to split below
-nmap <c-j> <c-w>j
+nnoremap <c-j> <c-w>j
 
 " Go to split above
-nmap <c-k> <c-w>k
+nnoremap <c-k> <c-w>k
 
 " Go to split left
-nmap <c-h> <c-w>h
+nnoremap <c-h> <c-w>h
 
 " Go to split right
-nmap <c-l> <c-w>l
+nnoremap <c-l> <c-w>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Movement Shortcuts
@@ -330,31 +340,21 @@ nnoremap N Nzzzv
 " Misc Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn off search highlight
-nmap ? :noh<cr>
+nnoremap ? :noh<cr>
 
 " Toggle spell check
-nmap <leader>sc :setlocal spell!<cr>
+nnoremap <leader>sc :setlocal spell!<cr>
 
 " Remove trailing whitespace
-nmap <leader>xt :let _s=@/<bar>:%s/\s\+$//e<bar>:let @/=_s<bar>:noh<cr>:echo "Trailing whitespace removed"<cr>
+nnoremap <leader>xt :let _s=@/<bar>:%s/\s\+$//e<bar>:let @/=_s<bar>:noh<cr>:echo "Trailing whitespace removed"<cr>
 
 " Sort lines alphabetically
-nmap <leader>sl :sort i<cr>
-vmap <leader>sl :sort i<cr>
+nnoremap <leader>sl :sort i<cr>
+vnoremap <leader>sl :sort i<cr>
 
 " Sort lines numerically
-nmap <leader>sn :sort n<cr>
-vmap <leader>sn :sort n<cr>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Slips
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Change console command (like :W to :w)
-ca W w
-ca WQ wq
-ca Wq wq
-ca Q q
-ca X x
+nnoremap <leader>sn :sort n<cr>
+vnoremap <leader>sn :sort n<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Switch
@@ -374,29 +374,29 @@ if !exists("g:indentswitch_indent")
   let g:indentswitch_indent = "spaces"
 endif
 
-function! Ispaces()
+function! s:Ispaces()
   let g:indentswitch_indent = "spaces"
   set expandtab
   set smarttab
   echo "Space Indentation"
 endfunction
 
-function! Itabs()
+function! s:Itabs()
   let g:indentswitch_indent = "tabs"
   set noexpandtab
   set nosmarttab
   echo "Tab Indentation"
 endfunction
 
-function! Itoggle()
+function! s:Itoggle()
   if g:indentswitch_indent == "tabs"
-    call Ispaces()
+    call s:Ispaces()
   else
-    call Itabs()
+    call s:Itabs()
   endif
 endfunction
 
-function! Ishow()
+function! s:Ishow()
   if g:indentswitch_indent == "tabs"
     echo "Tab Indentation"
   else
@@ -412,13 +412,13 @@ else
   set smarttab
 endif
 
-command! -bar -nargs=0 Itoggle call Itoggle()
-command! -bar -nargs=0 Itabs call Itabs()
-command! -bar -nargs=0 Ispaces call Ispaces()
-command! -bar -nargs=0 Ishow call Ishow()
+command! -bar -nargs=0 Itoggle call s:Itoggle()
+command! -bar -nargs=0 Itabs call s:Itabs()
+command! -bar -nargs=0 Ispaces call s:Ispaces()
+command! -bar -nargs=0 Ishow call s:Ishow()
 
-map <leader>it :Itoggle<cr>
-map <leader>i<tab> :Itabs<cr>
-map <leader>i<space> :Ispaces<cr>
-map <leader>is :Ishow<cr>
-map <leader>ir gg=G''
+nnoremap <leader>it :Itoggle<cr>
+nnoremap <leader>i<tab> :Itabs<cr>
+nnoremap <leader>i<space> :Ispaces<cr>
+nnoremap <leader>is :Ishow<cr>
+nnoremap <leader>ir gg=G

@@ -23,11 +23,11 @@ if exists("vimsettings_loaded")
 endif
 let vimsettings_loaded = 1
 function! VimSettingsInit()
-  execute ":PluginInstall"
-  execute ":bd"
-  execute ":so $MYVIMRC"
-  execute ":PluginInstall"
-  execute ":bd"
-  execute ":so $MYVIMRC"
+  :PluginInstall
+  :bd
+  :so $MYVIMRC
+  :PluginInstall
+  :bd
+  :so $MYVIMRC
 endfunction
 command! -bar -nargs=0 VimSettingsInit call VimSettingsInit()
