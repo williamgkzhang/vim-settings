@@ -5,7 +5,7 @@ let vimsettings_username = "USERNAME"
 
 " Vundle setup
 exec ":set runtimepath+=" . vimsettings_bundlepath . "/vundle/"
-call vundle#rc(vimsettings_bundlepath)
+call vundle#begin(vimsettings_bundlepath)
 Plugin 'gmarik/vundle'
 
 " Include vim-settings
@@ -15,6 +15,7 @@ Plugin vimsettings_username . '/vim-settings'
 let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vim-settings.vim"
 if filereadable(glob($VIMSETTINGS))
   exec ":so " . $VIMSETTINGS
+  call vundle#end()
 endif
 
 " vim-settings init helper
@@ -22,7 +23,7 @@ if exists("vimsettings_loaded")
   finish
 endif
 let vimsettings_loaded = 1
-function! VimSettingsInit()
+function! s:VimSettingsInit()
   :PluginInstall
   :bd
   :so $MYVIMRC
@@ -30,4 +31,4 @@ function! VimSettingsInit()
   :bd
   :so $MYVIMRC
 endfunction
-command! -bar -nargs=0 VimSettingsInit call VimSettingsInit()
+command! -bar -nargs=0 VimSettingsInit call s:VimSettingsInit()
