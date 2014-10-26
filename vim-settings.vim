@@ -114,6 +114,7 @@ au VimEnter * Alias Q q
 au VimEnter * Alias X x
 
 " Safariext
+nnoremap <leader>eo :SafariExtensionOpen<cr>
 nnoremap <leader>er :SafariExtensionReload<cr>
 nnoremap <leader>ei :SafariExtensionInspectGlobal<cr>
 
