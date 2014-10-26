@@ -34,6 +34,9 @@ Plugin 'skwp/vim-rspec'
 " Create Command Aliases
 Plugin 'vim-scripts/cmdalias.vim'
 
+" Safari Extension Development
+Plugin 'flipxfx/vim-safariext'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -109,6 +112,10 @@ au VimEnter * Alias WQ wq
 au VimEnter * Alias Wq wq
 au VimEnter * Alias Q q
 au VimEnter * Alias X x
+
+" Safariext
+nnoremap <leader>er :SafariExtensionReload<cr>
+nnoremap <leader>ei :SafariExtensionInspectGlobal<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
@@ -358,18 +365,15 @@ vnoremap <leader>sn :sort n<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Switch
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
 " Helps switch between space and tab indentation
+"
 " <leader>it        - toggle indentation method
 " <leader>i<tab>    - switch to tab indentation
 " <leader>i<space>  - switch to space indentation
 " <leader>is        - show current indentation method
 " <leader>ir        - reindent the file using current indentation method
-if exists("indentswitch_loaded")
-  finish
-endif
-let indentswitch_loaded = 1
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if !exists("g:indentswitch_indent")
   let g:indentswitch_indent = "spaces"
 endif
