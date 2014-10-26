@@ -121,12 +121,12 @@ au VimEnter * Alias Q q
 au VimEnter * Alias X x
 
 " Safariext
-nnoremap <leader>eo :SafariExtensionOpen<cr>
-nnoremap <leader>ei :SafariExtensionInstall<cr>
-nnoremap <leader>eu :SafariExtensionUninstall<cr>
-nnoremap <leader>er :SafariExtensionReload<cr>
-nnoremap <leader>eg :SafariExtensionInspectGlobal<cr>
-nnoremap <leader>eb :SafariExtensionBuild<cr>
+nnoremap <leader>eo :SafariextOpen<cr>
+nnoremap <leader>ei :SafariextInstall<cr>
+nnoremap <leader>eu :SafariextUninstall<cr>
+nnoremap <leader>er :SafariextReload<cr>
+nnoremap <leader>eg :SafariextInspectGlobal<cr>
+nnoremap <leader>eb :SafariextBuild<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
