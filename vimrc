@@ -12,7 +12,7 @@ Plugin 'gmarik/vundle'
 Plugin vimsettings_username . '/vim-settings'
 
 " Load vim-settings.vim and tie it to $VIMSETTINGS
-let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/settings.vim"
+let $VIMSETTINGS = vimsettings_bundlepath . "/vim-settings/vim-settings.vim"
 if filereadable(glob($VIMSETTINGS))
   exec ":so " . $VIMSETTINGS
   call vundle#end()
