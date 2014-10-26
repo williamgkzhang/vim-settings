@@ -1,4 +1,4 @@
-# Vim Settings
+# vim-settings.vim
 
 The basic idea behind vim-settings is to sync Vim settings in a git repository using Vundle. 
 The solution is built with my settings embedded for others to use or fork and customize. 
