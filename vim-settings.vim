@@ -178,6 +178,9 @@ set showmatch
 " Search starts while entering string
 set incsearch
 
+" Show cursor line
+set cursorline
+
 " Search highlighting
 set hlsearch
 
@@ -225,6 +228,9 @@ set clipboard=unnamed
 
 " Buffer screen updates to speed up macros etc.
 set lazyredraw
+
+" Disable message at start
+set shortmess+=I
 
 " New window appears below current
 set splitbelow
@@ -346,6 +352,16 @@ vnoremap L g_
 " Keep search matches in the middle of the window.
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" No arrow keys for you
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc Shortcuts
