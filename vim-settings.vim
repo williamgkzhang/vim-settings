@@ -93,8 +93,7 @@ let g:mapleader=" "
 let g:nerdtree_tabs_open_on_gui_startup=0
 
 " NERDTree toggle
-noremap <a-tab> :NERDTreeToggle<cr>
-noremap <F2> :NERDTreeToggle<cr>
+noremap <leader>n :NERDTreeToggle<cr>
 
 " NERDTree close on open file
 let NERDTreeQuitOnOpen=1
@@ -355,7 +354,7 @@ noremap H ^
 noremap L $
 vnoremap L g_
 
-" Keep search matches in the middle of the window.
+" Keep search matches in the middle of the window
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
@@ -394,10 +393,13 @@ nnoremap > >>
 nnoremap < <<
 
 " Edit vim-settings
-map <leader>rc :e $VIMSETTINGS<cr>
+nnoremap <leader>rc :e $VIMSETTINGS<cr>
 
 " Source vimrc
-map <leader>rC :so $MYVIMRC<cr>
+nnoremap <leader>rC :so $MYVIMRC<cr>
+
+" Toggle wrap
+nnoremap <leader>wt :set invwrap<cr>:set wrap?<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Switch
