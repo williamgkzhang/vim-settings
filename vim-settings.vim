@@ -308,6 +308,12 @@ nnoremap <leader>bd :bprevious<cr>:bdelete #<cr>
 " Remove the current buffer with override
 nnoremap <leader>bD :bprevious<cr>:bdelete! #<cr>
 
+" Remove the current buffer and window
+nnoremap <leader>Bd :bprevious<cr>:bdelete #<cr>:q<cr>
+
+" Remove the current buffer and window with override
+nnoremap <leader>BD :bprevious<cr>:bdelete! #<cr>:q<cr>
+
 " Split current file
 nnoremap <leader>bs :split<cr>
 
@@ -354,14 +360,14 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 
 " No arrow keys for you
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc Shortcuts
@@ -382,6 +388,16 @@ vnoremap <leader>sl :sort i<cr>
 " Sort lines numerically
 nnoremap <leader>sn :sort n<cr>
 vnoremap <leader>sn :sort n<cr>
+
+" Faster indentation
+nnoremap > >>
+nnoremap < <<
+
+" Edit vim-settings
+map <leader>rc :e $VIMSETTINGS<cr>
+
+" Source vimrc
+map <leader>rC :so $MYVIMRC<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Switch
