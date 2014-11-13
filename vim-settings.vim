@@ -112,6 +112,9 @@ let g:airline#extensions#tabline#fnamemod=":t"
 " RSpec turn off default mappings
 let g:RspecKeymap=0
 
+" Syntastic ignore html tidy
+let g:syntastic_html_tidy_ignore_errors=['proprietary attribute "v-', 'trimming empty']
+
 " CmdAlias aliases (helps slips like :W to :w)
 au VimEnter * Alias W w
 au VimEnter * Alias WQ wq
