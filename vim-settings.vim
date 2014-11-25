@@ -113,7 +113,7 @@ let g:airline#extensions#tabline#fnamemod=":t"
 let g:RspecKeymap=0
 
 " Syntastic ignore html tidy
-let g:syntastic_html_tidy_ignore_errors=['proprietary attribute "v-', 'trimming empty']
+let g:syntastic_html_tidy_ignore_errors=['proprietary attribute', 'trimming empty', 'is not recognized!', 'discarding unexpected']
 
 " CmdAlias aliases (helps slips like :W to :w)
 au VimEnter * Alias W w
@@ -161,6 +161,9 @@ set guioptions-=T
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Vue
+autocmd BufNewFile,BufReadPost *.vue set filetype=html
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
