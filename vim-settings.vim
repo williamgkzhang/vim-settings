@@ -113,7 +113,7 @@ let g:airline#extensions#tabline#fnamemod=":t"
 let g:RspecKeymap=0
 
 " Syntastic ignore html tidy
-let g:syntastic_html_tidy_ignore_errors=['proprietary attribute', 'trimming empty', 'is not recognized!', 'discarding unexpected']
+let g:syntastic_html_tidy_ignore_errors=["proprietary attribute", "trimming empty", "is not recognized!", "discarding unexpected", "'<' + '/' + letter not allowed here"]
 
 " CmdAlias aliases (helps slips like :W to :w)
 au VimEnter * Alias W w
