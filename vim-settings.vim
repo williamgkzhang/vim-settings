@@ -64,6 +64,9 @@ Plugin 'kchmck/vim-coffee-script'
 " Haml, Sass, SCSS
 Plugin 'tpope/vim-haml'
 
+" Stylus
+Plugin 'wavded/vim-stylus'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -363,6 +366,10 @@ vnoremap L g_
 " Keep search matches in the middle of the window
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" Keep next/previous paragraph in the middle of the window 
+nnoremap } }zzzv
+nnoremap { {zzzv
 
 " No arrow keys for you
 noremap <up> <nop>
