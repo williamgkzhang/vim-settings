@@ -367,10 +367,6 @@ vnoremap L g_
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-" Keep next/previous paragraph in the middle of the window 
-nnoremap } }zzzv
-nnoremap { {zzzv
-
 " No arrow keys for you
 noremap <up> <nop>
 noremap <down> <nop>
