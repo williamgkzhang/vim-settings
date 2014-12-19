@@ -473,3 +473,18 @@ nnoremap <leader>i<tab> :Itabs<cr>
 nnoremap <leader>i<space> :Ispaces<cr>
 nnoremap <leader>is :Ishow<cr>
 nnoremap <leader>ir gg=G
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Open current file with Marko
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! s:Marko()
+  noautocmd silent execute "!osascript -e 'tell application \"Marko\"' -e 'activate' -e 'open\"" . expand("%:p") . "\"' -e 'end tell'"
+  if v:shell_error
+    echohl Error
+    echon "Problem opening the file."
+    echohl Normal
+  endif
+endfunction
+
+command! -bar -nargs=0 Marko call s:Marko()
