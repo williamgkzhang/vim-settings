@@ -82,6 +82,9 @@ Plugin 'w0ng/vim-hybrid'
 " Badwolf
 Plugin 'sjl/badwolf'
 
+" Base16
+Plugin 'chriskempson/base16-vim'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
