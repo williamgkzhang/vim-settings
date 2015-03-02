@@ -95,6 +95,9 @@ let g:mapleader=" "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ctrlp ignores
+let g:ctrlp_custom_ignore="node_modules\|DS_Store\|git"
+
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
 
@@ -369,6 +372,10 @@ vnoremap L g_
 " Keep search matches in the middle of the window
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" Shortcuts for cnext and cprevious
+noremap gn :cnext<cr>
+noremap gN :cprevious<cr>
 
 " No arrow keys for you
 noremap <up> <nop>
