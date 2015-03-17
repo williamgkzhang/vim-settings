@@ -67,6 +67,12 @@ Plugin 'tpope/vim-haml'
 " Stylus
 Plugin 'wavded/vim-stylus'
 
+" JSX
+Plugin 'mxw/vim-jsx'
+
+" Coffescript JSX
+Plugin 'mtscout6/vim-cjsx'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -489,7 +495,7 @@ nnoremap <leader>ir gg=G
 " Open current file with Marko
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! s:Marko()
-  noautocmd silent execute "!osascript -e 'tell application \"Marko\"' -e 'activate' -e 'open\"" . expand("%:p") . "\"' -e 'end tell'"
+  noautocmd silent execute "!open -a \"Marko\" " . expand("%:p")
   if v:shell_error
     echohl Error
     echon "Problem opening the file."
