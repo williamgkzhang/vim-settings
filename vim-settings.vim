@@ -13,9 +13,6 @@ Plugin 'scrooloose/nerdcommenter'
 " Fuzzy file finder
 Plugin 'kien/ctrlp.vim'
 
-" Ghetto XML/HTML mappings
-Plugin 'tpope/vim-ragtag'
-
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
