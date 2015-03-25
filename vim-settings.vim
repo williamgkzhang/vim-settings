@@ -25,9 +25,6 @@ Plugin 'ervandew/supertab'
 " Mappings to manipulate surroundings
 Plugin 'tpope/vim-surround'
 
-" Syntax checker
-Plugin 'scrooloose/syntastic'
-
 " RSpec runner
 Plugin 'skwp/vim-rspec'
 
@@ -102,7 +99,7 @@ let g:mapleader=" "
 " Plugin Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ctrlp ignores
-let g:ctrlp_custom_ignore="node_modules\|DS_Store\|git"
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
@@ -126,9 +123,6 @@ let g:airline#extensions#tabline#fnamemod=":t"
 
 " RSpec turn off default mappings
 let g:RspecKeymap=0
-
-" Syntastic ignore html tidy
-let g:syntastic_html_tidy_ignore_errors=["proprietary attribute", "trimming empty", "is not recognized!", "discarding unexpected", "'<' + '/' + letter not allowed here", "unescaped &"]
 
 " CmdAlias aliases (helps slips like :W to :w)
 au VimEnter * Alias W w
