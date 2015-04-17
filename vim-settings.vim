@@ -482,10 +482,10 @@ nnoremap <leader>is :Ishow<cr>
 nnoremap <leader>ir gg=G
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Open current file with Marko
+" Open current file with Marked
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! s:Marko()
-  noautocmd silent execute "!open -a \"Marko\" " . expand("%:p")
+function! s:Marked()
+  noautocmd silent execute "!open -a \"Marked 2\" " . expand("%:p")
   if v:shell_error
     echohl Error
     echon "Problem opening the file."
@@ -493,7 +493,7 @@ function! s:Marko()
   endif
 endfunction
 
-command! -bar -nargs=0 Marko call s:Marko()
+command! -bar -nargs=0 Marked call s:Marked()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open current file with app given
