@@ -65,7 +65,7 @@ Plugin 'wavded/vim-stylus'
 Plugin 'mxw/vim-jsx'
 
 " Coffescript JSX
-Plugin 'mtscout6/vim-cjsx'
+"Plugin 'mtscout6/vim-cjsx'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
@@ -76,14 +76,11 @@ Plugin 'morhetz/gruvbox'
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
 
-" Hybrid
-Plugin 'w0ng/vim-hybrid'
+" Tommorrow
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 " Badwolf
 Plugin 'sjl/badwolf'
-
-" Base16
-Plugin 'chriskempson/base16-vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
