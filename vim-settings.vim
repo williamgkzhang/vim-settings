@@ -11,7 +11,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
 " Fuzzy file finder
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
