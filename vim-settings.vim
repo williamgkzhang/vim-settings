@@ -16,6 +16,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
+" Git branch manager
+Plugin 'idanarye/vim-merginal'
+
 " Tab autocomplete
 Plugin 'ervandew/supertab'
 
