@@ -163,15 +163,6 @@ set guioptions-=m
 set guioptions-=T
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Filetype Settings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" Vue
-autocmd BufNewFile,BufReadPost *.vue set filetype=html
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable Vim
@@ -292,8 +283,17 @@ set shiftwidth=2
 " Insert 2 columns when tab pressed
 set softtabstop=2
 
-" Backspace behave normally
-set backspace=2
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Filetype Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Markdown indent settings
+autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
+" Vue
+autocmd BufNewFile,BufReadPost *.vue set filetype=html
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
