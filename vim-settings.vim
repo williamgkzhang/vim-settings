@@ -67,9 +67,6 @@ Plugin 'wavded/vim-stylus'
 " JSX
 Plugin 'mxw/vim-jsx'
 
-" Coffescript JSX
-"Plugin 'mtscout6/vim-cjsx'
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
