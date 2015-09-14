@@ -82,6 +82,9 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 " Badwolf
 Plugin 'sjl/badwolf'
 
+" Splatoon
+Plugin 'rhysd/vim-color-splatoon'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
