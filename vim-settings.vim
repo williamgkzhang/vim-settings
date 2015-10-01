@@ -76,14 +76,8 @@ Plugin 'morhetz/gruvbox'
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
 
-" Tommorrow
-Plugin 'chriskempson/vim-tomorrow-theme'
-
-" Badwolf
-Plugin 'sjl/badwolf'
-
-" Splatoon
-Plugin 'rhysd/vim-color-splatoon'
+" Itg Flat
+Plugin 'cdmedia/itg_flat_vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
@@ -147,7 +141,7 @@ colors gruvbox
 if has("win32")
   set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
 else
-  set guifont=Monaco_for_Powerline:h12
+  set guifont=Hack:h12
 end
 
 " Hide scrollbars
@@ -508,4 +502,3 @@ function! s:OpenWith(appname)
 endfunction
 
 command! -bar -nargs=1 OpenWith call s:OpenWith(<f-args>)
-
