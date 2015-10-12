@@ -98,9 +98,6 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 " NERDTree toggle
 noremap <leader>n :NERDTreeToggle<cr>
 
-" NERDTree close on open file
-let NERDTreeQuitOnOpen=1
-
 " Airline autopopulate symbols
 if has("gui_running")
   let g:airline_powerline_fonts=1
