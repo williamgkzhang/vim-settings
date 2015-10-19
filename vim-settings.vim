@@ -34,6 +34,9 @@ Plugin 'vim-scripts/cmdalias.vim'
 " Safari Extension Development
 Plugin 'flipxfx/vim-safariext'
 
+" Live replace previews
+Plugin 'osyo-manga/vim-over'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -111,6 +114,9 @@ let g:airline#extensions#tabline#fnamemod=":t"
 
 " RSpec turn off default mappings
 let g:RspecKeymap=0
+
+" Vim over shortcut
+nnoremap <leader>/ :OverCommandLine<cr>%s/
 
 " CmdAlias aliases (helps slips like :W to :w)
 au VimEnter * Alias W w
@@ -258,6 +264,9 @@ filetype indent on
 
 " Set autocomplete to syntax completion
 set omnifunc=syntaxcomplete#Complete
+
+" Set searching to global by default
+set gdefault
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Settings
