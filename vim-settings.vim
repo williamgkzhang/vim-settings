@@ -371,8 +371,8 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 
 " Shortcuts for cnext and cprevious
-noremap gn :cnext<cr>
-noremap gN :cprevious<cr>
+noremap gn :cnext<cr>zzzv
+noremap gN :cprevious<cr>zzzv
 
 " No arrow keys for you
 noremap <up> <nop>
