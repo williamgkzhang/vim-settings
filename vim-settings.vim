@@ -98,13 +98,16 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
 
+" NERDTree arrow config
+let g:NERDTreeDirArrows=1
+let g:NERDTreeDirArrowExpandable='▸'
+let g:NERDTreeDirArrowCollapsible='▾'
+
 " NERDTree toggle
 noremap <leader>n :NERDTreeToggle<cr>
 
 " Airline autopopulate symbols
-if has("gui_running")
-  let g:airline_powerline_fonts=1
-end
+let g:airline_powerline_fonts=1
 
 " Airline smarter tabline
 let g:airline#extensions#tabline#enabled=1
@@ -138,7 +141,7 @@ nnoremap <leader>eb :SafariextBuild<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 set background=dark
-colors gruvbox
+colors solarized
 
 " Font depending on OS
 if has("win32")
@@ -158,6 +161,15 @@ set guioptions-=m
 
 " Hide toolbar
 set guioptions-=T
+
+" Set block/vertical bar cusor correctly in iTerm
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
+" Remove esc lag
+set timeoutlen=1000 ttimeoutlen=0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -267,6 +279,9 @@ set omnifunc=syntaxcomplete#Complete
 
 " Set searching to global by default
 set gdefault
+
+" Make backspace behave
+set backspace=indent,eol,start
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Settings
