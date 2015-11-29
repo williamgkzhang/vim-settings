@@ -310,6 +310,9 @@ autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
 " Vue
 autocmd BufNewFile,BufReadPost *.vue set filetype=html
 
+" Riot
+autocmd BufNewFile,BufReadPost *.tag set filetype=html
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
