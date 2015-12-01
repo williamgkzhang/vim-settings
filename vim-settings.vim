@@ -16,26 +16,20 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
-" Git branch manager
-Plugin 'idanarye/vim-merginal'
-
 " Tab autocomplete
 Plugin 'ervandew/supertab'
 
 " Mappings to manipulate surroundings
 Plugin 'tpope/vim-surround'
 
-" RSpec runner
-Plugin 'skwp/vim-rspec'
-
 " Create Command Aliases
 Plugin 'vim-scripts/cmdalias.vim'
 
-" Safari Extension Development
-Plugin 'flipxfx/vim-safariext'
-
 " Live replace previews
 Plugin 'osyo-manga/vim-over'
+
+" Safari Extension Development
+Plugin 'flipxfx/vim-safariext'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
@@ -70,6 +64,9 @@ Plugin 'wavded/vim-stylus'
 " JSX
 Plugin 'mxw/vim-jsx'
 
+" Vue files
+Plugin 'posva/vim-vue'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,9 +75,6 @@ Plugin 'morhetz/gruvbox'
 
 " Solarized
 Plugin 'altercation/vim-colors-solarized'
-
-" Itg Flat
-Plugin 'cdmedia/itg_flat_vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
@@ -115,9 +109,6 @@ let g:airline#extensions#tabline#enabled=1
 " Airline only show filename in tabline
 let g:airline#extensions#tabline#fnamemod=":t"
 
-" RSpec turn off default mappings
-let g:RspecKeymap=0
-
 " Vim over shortcut
 nnoremap <leader>/ :OverCommandLine<cr>%s/
 
@@ -143,12 +134,8 @@ nnoremap <leader>eb :SafariextBuild<cr>
 set background=dark
 colors solarized
 
-" Font depending on OS
-if has("win32")
-  set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
-else
-  set guifont=Hack:h12
-end
+" Font
+set guifont=Hack:h12
 
 " Hide scrollbars
 set guioptions-=r
@@ -306,12 +293,6 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Markdown indent settings
 autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
-
-" Vue
-autocmd BufNewFile,BufReadPost *.vue set filetype=html
-
-" Riot
-autocmd BufNewFile,BufReadPost *.tag set filetype=html
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
