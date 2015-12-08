@@ -49,9 +49,6 @@ Plugin 'tpope/vim-rails'
 " Jade
 Plugin 'digitaltoad/vim-jade'
 
-" C#
-Plugin 'OrangeT/vim-csharp'
-
 " Coffeescript
 Plugin 'kchmck/vim-coffee-script'
 
