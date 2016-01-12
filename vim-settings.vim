@@ -89,6 +89,9 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|sv
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
 
+" NERDTree close on open file
+let NERDTreeQuitOnOpen=1
+
 " NERDTree arrow config
 let g:NERDTreeDirArrows=1
 let g:NERDTreeDirArrowExpandable='▸'
