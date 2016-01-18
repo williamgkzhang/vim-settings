@@ -132,7 +132,10 @@ nnoremap <leader>eb :SafariextBuild<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 set background=dark
-colors solarized
+colors gruvbox
+
+" Enable Neovim full color
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Font
 set guifont=Hack:h12
@@ -150,10 +153,7 @@ set guioptions-=m
 set guioptions-=T
 
 " Set block/vertical bar cusor correctly in iTerm
-if $TERM_PROGRAM =~ "iTerm"
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " Remove esc lag
 set timeoutlen=1000 ttimeoutlen=0
