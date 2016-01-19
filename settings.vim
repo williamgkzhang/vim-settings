@@ -7,8 +7,8 @@ Plug 'bling/vim-airline'
 " Filesystem explorer
 Plug 'scrooloose/nerdtree'
 
-" NERDCommenter
-Plug 'scrooloose/nerdcommenter'
+" Automatic commenting
+Plug 'tpope/vim-commentary'
 
 " Fuzzy file finder
 Plug 'ctrlpvim/ctrlp.vim'
