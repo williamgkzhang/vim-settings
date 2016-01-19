@@ -138,7 +138,7 @@ nnoremap <leader>eb :SafariextBuild<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 set background=dark
-colors gruvbox
+silent! colorscheme gruvbox
 
 " Enable Neovim full color
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -243,7 +243,7 @@ set splitbelow
 set splitright
 
 " Set charater representation via UTF-8
-set encoding=utf8
+silent! set encoding=utf8
 
 " File type preferences
 set fileformats=unix,dos
