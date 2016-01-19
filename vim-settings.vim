@@ -2,76 +2,82 @@
 " General Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Upgraded status/tabline
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 
 " Filesystem explorer
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " NERDCommenter
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
 " Fuzzy file finder
-Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Git wrapper
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Tab autocomplete
-Plugin 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " Mappings to manipulate surroundings
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Create Command Aliases
-Plugin 'vim-scripts/cmdalias.vim'
+Plug 'vim-scripts/cmdalias.vim'
 
 " Live replace previews
-Plugin 'osyo-manga/vim-over'
+Plug 'osyo-manga/vim-over'
 
 " Safari Extension Development
-Plugin 'flipxfx/vim-safariext'
+Plug 'flipxfx/vim-safariext'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " HTML5
-Plugin 'othree/html5.vim'
+Plug 'othree/html5.vim'
 
 " Javascript
-Plugin 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 
 " Python
-Plugin 'hdima/python-syntax'
+Plug 'hdima/python-syntax'
 
 " Ruby on Rails
-Plugin 'tpope/vim-rails'
+Plug 'tpope/vim-rails'
 
 " Jade
-Plugin 'digitaltoad/vim-jade'
+Plug 'digitaltoad/vim-jade'
 
 " Coffeescript
-Plugin 'kchmck/vim-coffee-script'
+Plug 'kchmck/vim-coffee-script'
 
 " Haml, Sass, SCSS
-Plugin 'tpope/vim-haml'
+Plug 'tpope/vim-haml'
 
 " Stylus
-Plugin 'wavded/vim-stylus'
+Plug 'wavded/vim-stylus'
 
 " JSX
-Plugin 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx'
 
 " Vue files
-Plugin 'posva/vim-vue'
+Plug 'posva/vim-vue'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gruvbox
-Plugin 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 
 " Solarized
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" End of plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Call plug end
+call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader for Shortcuts
