@@ -11,6 +11,10 @@ In addition, as people fork the repo we can all take from each other and have a 
 - Install [Hack](https://github.com/chrissimpkins/Hack#desktop-usage) font
 - Open Vim and open the vimrc file with `:e $MYVIMRC`
 - Change the vimrc to [init.vim](init.vim), updating [`editor_path`](vimrc#L2) and [`settings_username`](vimrc#L4)
+    - `editor_path`
+        - Mac with Neovim - '~/.config/nvim'
+        - Mac with Vim - '~/.vim'
+    - `settings_username` - 'flipxfx' or username of forked repo
 - Close and reopen Vim and you should see vim-plug installing vim-settings
 - Run `:so $MYVIMRC` to source vim-settings settings after installed
 - Run `:PlugInstall` to install plugins in settings file
