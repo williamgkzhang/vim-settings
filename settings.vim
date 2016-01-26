@@ -357,7 +357,7 @@ nnoremap <c-j> <c-w>j
 " Go to split above
 nnoremap <c-k> <c-w>k
 
-" Go to split left
+" Go to split left, add iTerm Keys `^h` to send escape sequence `[104;5u`
 nnoremap <c-h> <c-w>h
 
 " Go to split right
