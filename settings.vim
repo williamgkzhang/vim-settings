@@ -369,7 +369,8 @@ nnoremap <c-l> <c-w>l
 " Make H and L go to beginning and end of line
 noremap H ^
 noremap L $
-vnoremap L g_
+vnoremap H ^
+vnoremap L $
 
 " Keep search matches in the middle of the window
 nnoremap n nzzzv
