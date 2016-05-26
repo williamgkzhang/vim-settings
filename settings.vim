@@ -1,8 +1,11 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Upgraded status/tabline
-Plug 'bling/vim-airline'
+" Airline tab bar
+Plug 'vim-airline/vim-airline'
+
+" Airline themes
+Plug 'vim-airline/vim-airline-themes'
 
 " Filesystem explorer
 Plug 'scrooloose/nerdtree'
@@ -64,6 +67,9 @@ Plug 'mxw/vim-jsx'
 " Vue files
 Plug 'posva/vim-vue'
 
+" Swig
+Plug 'blockloop/vim-swigjs'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -114,6 +120,10 @@ let g:airline#extensions#tabline#enabled=1
 
 " Airline only show filename in tabline
 let g:airline#extensions#tabline#fnamemod=":t"
+
+" Airline change section z
+let g:airline_section_z="%4l/%L:%3v"
+let g:airline#extensions#wordcount#enabled=0
 
 " Vim over shortcut
 nnoremap <leader>/ :OverCommandLine<cr>%s/
