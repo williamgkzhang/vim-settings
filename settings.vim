@@ -49,8 +49,8 @@ Plug 'hdima/python-syntax'
 " Ruby on Rails
 Plug 'tpope/vim-rails'
 
-" Jade
-Plug 'digitaltoad/vim-jade'
+" Pug
+Plug 'digitaltoad/vim-pug'
 
 " Coffeescript
 Plug 'kchmck/vim-coffee-script'
@@ -309,6 +309,9 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Markdown indent settings
 autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
+" RVM .ruby-env
+autocmd BufNewFile,BufReadPost *.ruby-env set filetype=sh
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
