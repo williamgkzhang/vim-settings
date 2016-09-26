@@ -34,6 +34,12 @@ Plug 'osyo-manga/vim-over'
 " Safari Extension Development
 Plug 'flipxfx/vim-safariext'
 
+" Directory diffs
+Plug 'will133/vim-dirdiff'
+
+" Search files
+Plug 'mileszs/ack.vim'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -98,6 +104,9 @@ let g:mapleader=" "
 " Ctrlp ignores
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
+" Ack search shortcut
+noremap g/ :Ack<space>
+
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
 
@@ -142,6 +151,13 @@ nnoremap <leader>eu :SafariextUninstall<cr>
 nnoremap <leader>er :SafariextReload<cr>
 nnoremap <leader>eg :SafariextInspectGlobal<cr>
 nnoremap <leader>eb :SafariextBuild<cr>
+
+" Ctrlp and ack with ripgrep
+if executable("rg")
+  let g:ctrlp_user_command="rg --files %s"
+  let g:ctrlp_use_caching=0
+  let g:ackprg="rg --vimgrep"
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
@@ -286,6 +302,9 @@ set gdefault
 " Make backspace behave
 set backspace=indent,eol,start
 
+" Fix for reloading files when changed outside neovim
+autocmd BufEnter,FocusGained * checktime
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -428,7 +447,7 @@ nnoremap > >>
 nnoremap < <<
 
 " Edit vim-settings
-nnoremap <leader>rc :e $VIMSETTINGS<cr>
+nnoremap <leader>rc :e $SETTINGS<cr>
 
 " Source vimrc
 nnoremap <leader>rC :so $MYVIMRC<cr>
