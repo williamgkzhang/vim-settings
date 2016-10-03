@@ -11,7 +11,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 
 " Automatic commenting
-Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdcommenter'
 
 " Fuzzy file finder
 Plug 'ctrlpvim/ctrlp.vim'
@@ -120,6 +120,9 @@ let g:NERDTreeDirArrowCollapsible='▾'
 
 " NERDTree toggle
 noremap <leader>n :NERDTreeToggle<cr>
+
+" NERDCommenter use space after delimiters
+let g:NERDSpaceDelims=1
 
 " Airline autopopulate symbols
 let g:airline_powerline_fonts=1
