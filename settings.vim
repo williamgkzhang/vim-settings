@@ -40,6 +40,9 @@ Plug 'will133/vim-dirdiff'
 " Search files
 Plug 'mileszs/ack.vim'
 
+" Easy tables
+Plug 'godlygeek/tabular'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -75,6 +78,9 @@ Plug 'posva/vim-vue'
 
 " Swig
 Plug 'blockloop/vim-swigjs'
+
+" Markdown
+Plug 'plasticboy/vim-markdown'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
