@@ -46,10 +46,10 @@ Plug 'godlygeek/tabular'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" HTML5
+"" HTML5
 Plug 'othree/html5.vim'
 
-" Javascript
+"" Javascript
 Plug 'pangloss/vim-javascript'
 
 " Python
@@ -75,9 +75,6 @@ Plug 'mxw/vim-jsx'
 
 " Vue files
 Plug 'posva/vim-vue'
-
-" Swig
-Plug 'blockloop/vim-swigjs'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
@@ -216,9 +213,6 @@ set showmatch
 
 " Search starts while entering string
 set incsearch
-
-" Show cursor line
-set cursorline
 
 " Search highlighting
 set hlsearch
