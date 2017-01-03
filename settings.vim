@@ -173,7 +173,7 @@ set background=dark
 silent! colorscheme gruvbox
 
 " Enable Neovim full color
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 
 " Font
 set guifont=Hack:h12
@@ -334,6 +334,9 @@ autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " RVM .ruby-env
 autocmd BufNewFile,BufReadPost *.ruby-env set filetype=sh
+
+" Weex
+autocmd BufNewFile,BufReadPost *.we set filetype=vue
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
