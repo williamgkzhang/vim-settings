@@ -43,6 +43,9 @@ Plug 'mileszs/ack.vim'
 " Easy tables
 Plug 'godlygeek/tabular'
 
+" Delete buffers except current
+Plug 'schickling/vim-bufonly'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
