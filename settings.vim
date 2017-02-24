@@ -467,6 +467,9 @@ nnoremap <leader>rC :so $MYVIMRC<cr>
 " Toggle wrap
 nnoremap <leader>wt :set invwrap<cr>:set wrap?<cr>
 
+" Turn off ex mode
+nnoremap Q <nop>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indent Switch
 "
