@@ -371,6 +371,9 @@ nnoremap <leader>Bd :bprevious<cr>:bdelete #<cr>:q<cr>
 " Remove the current buffer and window with override
 nnoremap <leader>BD :bprevious<cr>:bdelete! #<cr>:q<cr>
 
+" Remove all buffers except for the current one
+nnoremap <leader>bo :BufOnly<cr>
+
 " Split current file
 nnoremap <leader>bs :split<cr>
 
