@@ -111,7 +111,7 @@ let g:mapleader=" "
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " Ack search shortcut
-noremap g/ :Ack<space>
+noremap g/ :Ack!<space>
 
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
