@@ -89,7 +89,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'morhetz/gruvbox'
 
 " Solarized
-Plug 'altercation/vim-colors-solarized'
+Plug 'frankier/neovim-colors-solarized-truecolor-only'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " End of plugins
@@ -171,12 +171,12 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorscheme
-set background=dark
-silent! colorscheme gruvbox
-
 " Enable Neovim full color
 set termguicolors
+
+" Colorscheme
+set background=dark
+colorscheme solarized
 
 " Font
 set guifont=Hack:h12
