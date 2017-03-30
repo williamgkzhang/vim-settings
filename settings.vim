@@ -538,7 +538,7 @@ nnoremap <leader>ir gg=G
 " Open current file with Marked
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! s:Marked()
-  noautocmd silent execute "!open -a \"Marked 2\" " . expand("%:p")
+  noautocmd silent execute "!open -a \"Marked 2\" \"%\""
   if v:shell_error
     echohl Error
     echon "Problem opening the file."
@@ -552,7 +552,7 @@ command! -bar -nargs=0 Marked call s:Marked()
 " Open current file with app given
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! s:OpenWith(appname)
-  noautocmd silent execute "!open -a \"" . a:appname . "\" " . expand("%:p")
+  noautocmd silent execute "!open -a \"" . a:appname . "\" \"%\""
   if v:shell_error
     echohl Error
     echon "Problem opening the file."
