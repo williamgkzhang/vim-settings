@@ -46,6 +46,9 @@ Plug 'godlygeek/tabular'
 " Delete buffers except current
 Plug 'schickling/vim-bufonly'
 
+" Gutter git status
+Plug 'airblade/vim-gitgutter'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
