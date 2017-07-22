@@ -7,18 +7,12 @@ Once setup, any customizations and updates are synced via vim-plug.
 In addition, as people fork the repo we can all take from each other and have a nice little place to see what others are doing.
 
 ### Install
-- If you want to customize the settings, then fork this repository first
-- Install [Hack](https://github.com/chrissimpkins/Hack#desktop-usage) font
-- Open Vim and open the vimrc file with `:e $MYVIMRC`
-- Change the vimrc to [init.vim](init.vim), updating [`editor_path`](init.vim#L2) and [`settings_username`](init.vim#L4)
-    - `editor_path`
-        - Mac with Neovim - '~/.config/nvim'
-        - Mac with Vim - '~/.vim'
-    - `settings_username` - 'flipxfx' or username of forked repo
-- Close and reopen Vim and you should see vim-plug installing vim-settings
-- Run `:so $MYVIMRC` to source vim-settings settings after installed
-- Run `:PlugInstall` to install plugins in settings file
-- Run `:so $MYVIMRC` to source the new plugins installed
+- If you want to customize the settings then fork this repository first
+- Install [Hack](https://github.com/chrissimpkins/Hack#desktop-usage) font if using it
+- Create/update neovim init file to that of [init.vim](init.vim), updating [`settings_username`](init.vim#L4) to your GitHub username if you forked the repository
+    - Mac - `~/.config/nvim/init.vim`
+    - Windows - `%LocalAppData%/nvim/init.vim`
+- Open neovim and it should install everything automatically
 
 ### Pull Update
 - Run `:PlugUpdate`
