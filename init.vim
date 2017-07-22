@@ -1,5 +1,5 @@
 " Path to editor settings folder
-let editor_path = '~/.config/nvim'
+let editor_path = ''
 
 " Settings username
 let settings_username = 'flipxfx'
