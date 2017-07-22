@@ -179,7 +179,7 @@ set termguicolors
 
 " Colorscheme
 set background=dark
-colorscheme gruvbox
+silent! colorscheme gruvbox
 
 " Font
 set guifont=Hack:h12
