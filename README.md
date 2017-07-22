@@ -1,8 +1,7 @@
 # Vim Settings
 
-The basic idea behind vim-settings is to sync Vim settings in a git repository using [vim-plug](https://github.com/junegunn/vim-plug).
+The basic idea behind vim-settings is to sync Neovim settings in a git repository using [vim-plug](https://github.com/junegunn/vim-plug).
 The solution is built with my settings embedded for others to use or fork and customize.
-The current settings are built to use with [Neovim](https://neovim.io).
 Once setup, any customizations and updates are synced via vim-plug.
 In addition, as people fork the repo we can all take from each other and have a nice little place to see what others are doing.
 
