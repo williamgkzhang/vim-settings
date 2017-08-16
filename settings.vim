@@ -49,13 +49,16 @@ Plug 'schickling/vim-bufonly'
 " Gutter git status
 Plug 'airblade/vim-gitgutter'
 
+" Autoclose tags
+Plug 'alvan/vim-closetag'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" HTML5
+" HTML5
 Plug 'othree/html5.vim'
 
-"" Javascript
+" Javascript
 Plug 'pangloss/vim-javascript'
 
 " Python
@@ -79,6 +82,9 @@ Plug 'wavded/vim-stylus'
 " JSX
 Plug 'mxw/vim-jsx'
 
+" Styled JSX
+Plug 'alampros/vim-styled-jsx'
+
 " Vue files
 Plug 'posva/vim-vue'
 
@@ -90,9 +96,6 @@ Plug 'plasticboy/vim-markdown'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gruvbox
 Plug 'morhetz/gruvbox'
-
-" Solarized
-Plug 'frankier/neovim-colors-solarized-truecolor-only'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " End of plugins
@@ -110,6 +113,12 @@ let g:mapleader=" "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Allow JSX highlighting on .js files
+let g:jsx_ext_required = 0
+
+" Set files to autoclose on
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
+
 " Ctrlp ignores
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
@@ -457,9 +466,9 @@ vnoremap <leader>sl :sort i<cr>
 nnoremap <leader>sn :sort n<cr>
 vnoremap <leader>sn :sort n<cr>
 
-" Faster indentation
-nnoremap > >>
-nnoremap < <<
+" Better indentation
+xnoremap > >gv
+xnoremap < <gv
 
 " Edit vim-settings
 nnoremap <leader>rc :e $SETTINGS<cr>
