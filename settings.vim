@@ -467,6 +467,8 @@ nnoremap <leader>sn :sort n<cr>
 vnoremap <leader>sn :sort n<cr>
 
 " Better indentation
+nnoremap > >>
+nnoremap < <<
 xnoremap > >gv
 xnoremap < <gv
 
