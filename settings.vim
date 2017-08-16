@@ -139,6 +139,8 @@ let g:NERDTreeDirArrowCollapsible='▾'
 " NERDTree toggle
 noremap <leader>n :NERDTreeToggle<cr>
 
+let g:NERDTreeIgnore=['node_modules$[[dir]]']
+
 " NERDCommenter use space after delimiters
 let g:NERDSpaceDelims=1
 
