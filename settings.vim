@@ -49,9 +49,6 @@ Plug 'schickling/vim-bufonly'
 " Gutter git status
 Plug 'airblade/vim-gitgutter'
 
-" Autoclose tags
-Plug 'alvan/vim-closetag'
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
