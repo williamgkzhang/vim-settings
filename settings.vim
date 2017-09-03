@@ -191,6 +191,8 @@ set termguicolors
 " Colorscheme
 set background=dark
 silent! colorscheme gruvbox
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='hard'
 
 " Font
 set guifont=Hack:h12
