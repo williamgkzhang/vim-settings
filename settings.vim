@@ -88,6 +88,9 @@ Plug 'posva/vim-vue'
 " Markdown
 Plug 'plasticboy/vim-markdown'
 
+" Styled components
+Plug 'styled-components/vim-styled-components'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -136,7 +139,7 @@ let g:NERDTreeDirArrowCollapsible='▾'
 " NERDTree toggle
 noremap <leader>n :NERDTreeToggle<cr>
 
-let g:NERDTreeIgnore=['node_modules$[[dir]]', '\.DS_Store$', '.git$[[dir]]']
+let g:NERDTreeIgnore=['node_modules$[[dir]]', '\.DS_Store$', '.git$[[dir]]', '.next$[[dir]]']
 
 " NERDCommenter use space after delimiters
 let g:NERDSpaceDelims=1
