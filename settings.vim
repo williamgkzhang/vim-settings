@@ -19,9 +19,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 
-" Tab autocomplete
-Plug 'ervandew/supertab'
-
 " Mappings to manipulate surroundings
 Plug 'tpope/vim-surround'
 
@@ -48,6 +45,12 @@ Plug 'schickling/vim-bufonly'
 
 " Gutter git status
 Plug 'airblade/vim-gitgutter'
+
+" Autocomplete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" Autoclose 
+Plug 'Raimondi/delimitMate'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
@@ -116,14 +119,31 @@ let g:mapleader=" "
 " Allow JSX highlighting on .js files
 let g:jsx_ext_required = 0
 
-" Set files to autoclose on
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
+" Deoplete enable
+let g:deoplete#enable_at_startup = 1
+
+" Deoplete tab
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" DelimitMate autoclose, jump, space, cr and inside quotes
+let g:delimitMate_autoclose = 1
+let g:delimitMate_jump_expansion = 1
+let g:delimitMate_expand_space = 1
+let g:delimitMate_expand_cr = 2
+let g:delimitMate_expand_inside_quotes = 1
 
 " Ctrlp ignores
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 " Ack search shortcut
 noremap g/ :Ack!<space>
+
+" Ctrlp and ack with ripgrep
+if executable("rg")
+  let g:ctrlp_user_command="rg --files %s"
+  let g:ctrlp_use_caching=0
+  let g:ackprg="rg --vimgrep"
+endif
 
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
@@ -174,13 +194,6 @@ nnoremap <leader>eu :SafariextUninstall<cr>
 nnoremap <leader>er :SafariextReload<cr>
 nnoremap <leader>eg :SafariextInspectGlobal<cr>
 nnoremap <leader>eb :SafariextBuild<cr>
-
-" Ctrlp and ack with ripgrep
-if executable("rg")
-  let g:ctrlp_user_command="rg --files %s"
-  let g:ctrlp_use_caching=0
-  let g:ackprg="rg --vimgrep"
-endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
