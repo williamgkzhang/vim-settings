@@ -28,9 +28,6 @@ Plug 'vim-scripts/cmdalias.vim'
 " Live replace previews
 Plug 'osyo-manga/vim-over'
 
-" Safari Extension Development
-Plug 'flipxfx/vim-safariext'
-
 " Directory diffs
 Plug 'will133/vim-dirdiff'
 
@@ -49,7 +46,7 @@ Plug 'airblade/vim-gitgutter'
 " Autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-" Autoclose 
+" Autoclose
 Plug 'Raimondi/delimitMate'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,14 +73,13 @@ Plug 'kchmck/vim-coffee-script'
 " Haml, Sass, SCSS
 Plug 'tpope/vim-haml'
 
-" Stylus
-Plug 'wavded/vim-stylus'
-
 " JSX
-Plug 'mxw/vim-jsx'
+Plug 'chemzqm/vim-jsx-improve', { 'for': [ 'javascript', 'js', 'jsx' ]}
+
 
 " Styled JSX
 Plug 'alampros/vim-styled-jsx'
+
 
 " Vue files
 Plug 'posva/vim-vue'
@@ -152,6 +148,7 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 let NERDTreeQuitOnOpen=1
 
 " NERDTree arrow config
+let NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrows=1
 let g:NERDTreeDirArrowExpandable='▸'
 let g:NERDTreeDirArrowCollapsible='▾'
@@ -186,14 +183,6 @@ au VimEnter * Alias WQ wq
 au VimEnter * Alias Wq wq
 au VimEnter * Alias Q q
 au VimEnter * Alias X x
-
-" Safariext
-nnoremap <leader>eo :SafariextOpen<cr>
-nnoremap <leader>ei :SafariextInstall<cr>
-nnoremap <leader>eu :SafariextUninstall<cr>
-nnoremap <leader>er :SafariextReload<cr>
-nnoremap <leader>eg :SafariextInspectGlobal<cr>
-nnoremap <leader>eb :SafariextBuild<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
@@ -366,9 +355,6 @@ autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " RVM .ruby-env
 autocmd BufNewFile,BufReadPost *.ruby-env set filetype=sh
-
-" Weex
-autocmd BufNewFile,BufReadPost *.we set filetype=vue
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
@@ -564,20 +550,6 @@ nnoremap <leader>i<tab> :Itabs<cr>
 nnoremap <leader>i<space> :Ispaces<cr>
 nnoremap <leader>is :Ishow<cr>
 nnoremap <leader>ir gg=G
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Open current file with Marked
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! s:Marked()
-  noautocmd silent execute "!open -a \"Marked 2\" \"%\""
-  if v:shell_error
-    echohl Error
-    echon "Problem opening the file."
-    echohl Normal
-  endif
-endfunction
-
-command! -bar -nargs=0 Marked call s:Marked()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open current file with app given
