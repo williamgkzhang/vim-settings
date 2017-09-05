@@ -74,12 +74,10 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'tpope/vim-haml'
 
 " JSX
-Plug 'chemzqm/vim-jsx-improve', { 'for': [ 'javascript', 'js', 'jsx' ]}
-
+Plug 'mxw/vim-jsx'
 
 " Styled JSX
 Plug 'alampros/vim-styled-jsx'
-
 
 " Vue files
 Plug 'posva/vim-vue'
