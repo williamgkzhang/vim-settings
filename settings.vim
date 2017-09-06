@@ -148,8 +148,7 @@ let NERDTreeQuitOnOpen=1
 " NERDTree arrow config
 let NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrows=1
-let g:NERDTreeDirArrowExpandable='▸'
-let g:NERDTreeDirArrowCollapsible='▾'
+let g:NERDTreeCascadeSingleChildDir=0
 
 " NERDTree toggle
 noremap <leader>n :NERDTreeToggle<cr>
