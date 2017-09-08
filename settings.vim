@@ -46,6 +46,9 @@ Plug 'airblade/vim-gitgutter'
 " Autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
+" Syntax autocomplete
+Plug 'Shougo/neco-syntax'
+
 " Autoclose
 Plug 'Raimondi/delimitMate'
 
@@ -57,6 +60,18 @@ Plug 'othree/html5.vim'
 
 " Javascript
 Plug 'pangloss/vim-javascript'
+
+" Javascript libraries
+Plug 'othree/javascript-libraries-syntax.vim'
+
+" JSX
+Plug 'mxw/vim-jsx'
+
+" Styled components
+Plug 'styled-components/vim-styled-components'
+
+" Styled JSX
+Plug 'alampros/vim-styled-jsx'
 
 " Python
 Plug 'hdima/python-syntax'
@@ -73,20 +88,11 @@ Plug 'kchmck/vim-coffee-script'
 " Haml, Sass, SCSS
 Plug 'tpope/vim-haml'
 
-" JSX
-Plug 'mxw/vim-jsx'
-
-" Styled JSX
-Plug 'alampros/vim-styled-jsx'
-
 " Vue files
 Plug 'posva/vim-vue'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
-
-" Styled components
-Plug 'styled-components/vim-styled-components'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
@@ -115,6 +121,11 @@ let g:jsx_ext_required = 0
 
 " Deoplete enable
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#omni#input_patterns = {}
+
+" Javascript libraries
+let g:used_javascript_libs = 'react'
+autocmd BufReadPre *.js let b:javascript_lib_use_react = 1
 
 " Deoplete tab
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
@@ -188,8 +199,8 @@ au VimEnter * Alias X x
 set termguicolors
 
 " Colorscheme
-set background=dark
 silent! colorscheme gruvbox
+set background=dark
 
 " Font
 set guifont=Hack:h12
