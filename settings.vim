@@ -8,13 +8,16 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Filesystem explorer
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 " Automatic commenting
 Plug 'scrooloose/nerdcommenter'
 
 " Fuzzy file finder
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
+
+" Search files
+Plug 'mileszs/ack.vim', { 'on': 'CtrlP' }
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -26,19 +29,16 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/cmdalias.vim'
 
 " Live replace previews
-Plug 'osyo-manga/vim-over'
+Plug 'osyo-manga/vim-over', { 'on': 'OverCommandLine' }
 
 " Directory diffs
-Plug 'will133/vim-dirdiff'
-
-" Search files
-Plug 'mileszs/ack.vim'
+Plug 'will133/vim-dirdiff', { 'on': 'DirDiff' }
 
 " Easy tables
-Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular', { 'for': 'markdown' }
 
 " Delete buffers except current
-Plug 'schickling/vim-bufonly'
+Plug 'schickling/vim-bufonly', { 'on': 'BufOnly' }
 
 " Gutter git status
 Plug 'airblade/vim-gitgutter'
@@ -52,47 +52,39 @@ Plug 'Shougo/neco-syntax'
 " Autoclose
 Plug 'Raimondi/delimitMate'
 
+" Indent guides
+Plug 'nathanaelkane/vim-indent-guides'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Language Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " HTML5
-Plug 'othree/html5.vim'
+Plug 'othree/html5.vim', { 'for': ['html', 'vue'] }
 
 " Javascript
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx', 'vue'] }
 
 " Javascript libraries
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
 " JSX
-Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 " Styled components
-Plug 'styled-components/vim-styled-components'
-
-" Styled JSX
-Plug 'alampros/vim-styled-jsx'
-
-" Python
-Plug 'hdima/python-syntax'
-
-" Ruby on Rails
-Plug 'tpope/vim-rails'
-
-" Pug
-Plug 'digitaltoad/vim-pug'
-
-" Coffeescript
-Plug 'kchmck/vim-coffee-script'
-
-" Haml, Sass, SCSS
-Plug 'tpope/vim-haml'
-
-" Vue files
-Plug 'posva/vim-vue'
+Plug 'styled-components/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
 
 " Markdown
-Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+
+" Vue files
+Plug 'posva/vim-vue', { 'for': 'vue' }
+
+" Pug
+Plug 'digitaltoad/vim-pug', { 'for': ['pug', 'vue'] }
+
+" Coffeescript
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
@@ -140,8 +132,14 @@ let g:delimitMate_expand_inside_quotes = 1
 " Ctrlp ignores
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
+" Vim gutter disable realtime
+let g:gitgutter_realtime=0
+
 " Ack search shortcut
 noremap g/ :Ack!<space>
+
+" Ctrlp keybind
+noremap <c-p> :CtrlP<cr>
 
 " Ctrlp and ack with ripgrep
 if executable("rg")
@@ -181,6 +179,12 @@ let g:airline#extensions#tabline#fnamemod=":t"
 " Airline change section z
 let g:airline_section_z="%4l/%L:%3v"
 let g:airline#extensions#wordcount#enabled=0
+
+" Indent guides enable
+let g:indent_guides_enable_on_vim_startup = 1
+
+" Indent guides size
+let g:indent_guides_guide_size=1
 
 " Vim over shortcut
 nnoremap <leader>/ :OverCommandLine<cr>%s/
