@@ -17,7 +17,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 
 " Search files
-Plug 'mileszs/ack.vim', { 'on': 'CtrlP' }
+Plug 'mileszs/ack.vim', { 'on': ['CtrlP', 'Ack'] }
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
