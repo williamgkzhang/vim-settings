@@ -14,10 +14,10 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 
 " Fuzzy file finder
-Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Search files
-Plug 'mileszs/ack.vim', { 'on': ['CtrlP', 'Ack'] }
+Plug 'mileszs/ack.vim'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -71,7 +71,10 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascri
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 " Styled components
-Plug 'styled-components/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
+" Plug 'styled-components/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
+
+" Styled JSX
+Plug 'alampros/vim-styled-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 " Markdown
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
@@ -365,6 +368,9 @@ autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " RVM .ruby-env
 autocmd BufNewFile,BufReadPost *.ruby-env set filetype=sh
+
+" JSON rc files
+autocmd BufNewFile,BufReadPost .babelrc,.stylelintrc set filetype=json
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer/Tab Shortcuts
