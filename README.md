@@ -8,7 +8,7 @@ In addition, as people fork the repo we can all take from each other and have a 
 ### Install
 - If you want to customize the settings then fork this repository first
 - Install [Hack](https://github.com/chrissimpkins/Hack#desktop-usage) font if using it
-- Install [python 3](https://www.python.org/downloads) with [Homebrew](https://brew.sh) using `brew install python3`
+- Install python for neovim following these [instructions](https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim)
 - Create/replace [init.vim](init.vim) file, updating [`settings_username`](init.vim#L2) to your GitHub username if you forked the repository
     - Mac - `~/.config/nvim/init.vim`
     - Windows - `%LocalAppData%/nvim/init.vim`
