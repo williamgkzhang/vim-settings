@@ -1,11 +1,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Airline tab bar
-Plug 'vim-airline/vim-airline'
-
-" Airline themes
-Plug 'vim-airline/vim-airline-themes'
+" Lightline bottom bar"
+Plug 'itchyny/lightline.vim'
 
 " Filesystem explorer
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -171,18 +168,26 @@ let g:NERDTreeIgnore=['node_modules$[[dir]]', '\.DS_Store$', '.git$[[dir]]', '.n
 " NERDCommenter use space after delimiters
 let g:NERDSpaceDelims=1
 
-" Airline autopopulate symbols
-let g:airline_powerline_fonts=1
-
-" Airline smarter tabline
-let g:airline#extensions#tabline#enabled=1
-
-" Airline only show filename in tabline
-let g:airline#extensions#tabline#fnamemod=":t"
-
-" Airline change section z
-let g:airline_section_z="%4l/%L:%3v"
-let g:airline#extensions#wordcount#enabled=0
+let g:lightline = {
+ \ 'colorscheme': 'jellybeans',
+ \ 'active': {
+ \ 	'left': [ [ 'mode', 'paste'],
+ \			[ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+ \ },
+ \ 'component_function': {
+ \		'fugitive': 'MyFugitive'
+ \ },
+ \ 'component': {
+ \		'readonly': '%{&filetype=="help"?"":&readonly?"ReadOnly":""}',
+ \		'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}'
+ \ },
+ \ 'component_visible_condition': {
+ \		'readonly': '(&filetype!="help"&& &readonly)',
+ \		'modified': '(&filetype!="help"&&(&modified||!&modifiable))'
+ \ },
+ \ 'separator': { 'left': '', 'right': '' },
+ \ 'subseparator': { 'left': '', 'right': '' }
+ \ }
 
 " Indent guides enable
 let g:indent_guides_enable_on_vim_startup = 1
