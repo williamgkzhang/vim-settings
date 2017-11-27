@@ -94,6 +94,7 @@ Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gruvbox
 Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " End of plugins
@@ -206,7 +207,8 @@ au VimEnter * Alias X x
 set termguicolors
 
 " Colorscheme
-silent! colorscheme gruvbox
+silent! colorscheme base16-brewer
+
 set background=dark
 
 " Font
