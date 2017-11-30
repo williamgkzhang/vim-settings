@@ -46,9 +46,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Syntax autocomplete
 Plug 'Shougo/neco-syntax'
 
-" Autoclose
-Plug 'Raimondi/delimitMate'
-
 " Indent guides
 Plug 'nathanaelkane/vim-indent-guides'
 
@@ -123,13 +120,6 @@ autocmd BufReadPre *.js let b:javascript_lib_use_react = 1
 " Deoplete tab
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
-" DelimitMate autoclose, jump, space, cr and inside quotes
-let g:delimitMate_autoclose = 1
-let g:delimitMate_jump_expansion = 1
-let g:delimitMate_expand_space = 1
-let g:delimitMate_expand_cr = 2
-let g:delimitMate_expand_inside_quotes = 1
-
 " Ctrlp ignores
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
@@ -152,9 +142,6 @@ endif
 " NERDTree open on GUI startup
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-" NERDTree close on open file
-let NERDTreeQuitOnOpen=1
-
 " NERDTree arrow config
 let NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrows=1
@@ -168,6 +155,7 @@ let g:NERDTreeIgnore=['node_modules$[[dir]]', '\.DS_Store$', '.git$[[dir]]', '.n
 " NERDCommenter use space after delimiters
 let g:NERDSpaceDelims=1
 
+"Lightline Config
 let g:lightline = {
  \ 'colorscheme': 'jellybeans',
  \ 'active': {
@@ -188,6 +176,18 @@ let g:lightline = {
  \ 'separator': { 'left': '', 'right': '' },
  \ 'subseparator': { 'left': '', 'right': '' }
  \ }
+let g:lightline.tabline = {
+\ 'left': [ [ 'tabs' ] ],
+\ 'right': [ [ ] ] }
+
+"Helper for Lightline
+function! MyFugitive()
+  if exists("*fugitive#head")
+    let _ = fugitive#head()
+    return strlen(_) ? ' '._ : ''
+  endif
+  return ''
+endfunction
 
 " Indent guides enable
 let g:indent_guides_enable_on_vim_startup = 1
@@ -197,13 +197,6 @@ let g:indent_guides_guide_size=1
 
 " Vim over shortcut
 nnoremap <leader>/ :OverCommandLine<cr>%s/
-
-" CmdAlias aliases (helps slips like :W to :w)
-au VimEnter * Alias W w
-au VimEnter * Alias WQ wq
-au VimEnter * Alias Wq wq
-au VimEnter * Alias Q q
-au VimEnter * Alias X x
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Interface Settings
@@ -217,7 +210,7 @@ silent! colorscheme base16-brewer
 set background=dark
 
 " Font
-set guifont=Hack:h12
+set guifont=Hack:h14
 
 " Hide scrollbars
 set guioptions-=r
@@ -448,12 +441,6 @@ nnoremap <c-l> <c-w>l
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Movement Shortcuts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Make H and L go to beginning and end of line
-noremap H ^
-noremap L $
-vnoremap H ^
-vnoremap L $
-
 " Keep search matches in the middle of the window
 nnoremap n nzzzv
 nnoremap N Nzzzv
@@ -493,8 +480,6 @@ nnoremap <leader>sn :sort n<cr>
 vnoremap <leader>sn :sort n<cr>
 
 " Better indentation
-nnoremap > >>
-nnoremap < <<
 xnoremap > >gv
 xnoremap < <gv
 
