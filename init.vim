@@ -1,5 +1,5 @@
 " Settings username
-let settings_username = 'flipxfx'
+let settings_username = 'williamgkzhang'
 
 " Install plug/settings
 let editor_path = expand('<sfile>:p:h')
