@@ -81,7 +81,7 @@ Plug 'digitaltoad/vim-pug', { 'for': ['pug', 'vue'] }
 
 " Coffeescript
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-
+Plug 'jparise/vim-graphql'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color plugins
@@ -291,7 +291,7 @@ set laststatus=2
 set mouse=a
 
 " Allow use of system clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " Buffer screen updates to speed up macros etc.
 set lazyredraw
